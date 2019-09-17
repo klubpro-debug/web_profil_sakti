@@ -55,18 +55,20 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
+                                    <a class="nav-link" href="<?php echo site_url('');?>">Beranda</a>
                                 </li>
+                                <!--
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
+                                </li> -->
+ 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('advokat');?>">Advokat</a>
+                                    <a class="nav-link" href="<?php echo site_url('blog');?>">Berita</a>
                                 </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
-                                </li>
+                                <!--
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
                                 </li>
@@ -75,12 +77,12 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Contact</a>
+                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
                              </ul>
                         </div>
@@ -162,7 +164,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Artikel Terbaru</h2>
+                <h2>Berita Terbaru</h2>
             </div>
         </div>
         <div class="row">
@@ -189,6 +191,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
 </section>
 <!--//END OUR COURSES -->
 <!--============================= EVENTS =============================-->
+/*<!--
 <section class="event">
     <div class="container">
         <div class="row">
@@ -196,13 +199,13 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
                 <div class="event-img2">
                 <?php foreach ($pengumuman->result() as $row) :?>
                 <div class="row">
-                    <div class="col-sm-3"> <img src="<?php echo base_url().'theme/images/announcement-icon.png'?>" class="img-fluid" alt="event-img"></div><!-- // end .col-sm-3 -->
+                    <div class="col-sm-3"> <img src="<?php echo base_url().'theme/images/announcement-icon.png'?>
                     <div class="col-sm-9"> <h3><a href="<?php echo site_url('pengumuman');?>"><?php echo $row->pengumuman_judul;?></a></h3>
                       <span><?php echo $row->tanggal;?></span>
                       <p><?php echo limit_words($row->pengumuman_deskripsi,10).'...';?></p>
 
-                    </div><!-- // end .col-sm-7 -->
-                </div><!-- // end .row -->
+                    </div>
+                </div>
                 <?php endforeach;?>
                 </div>
             </div>
@@ -229,9 +232,9 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
             </div>
         </div>
     </div>
-</section>
+</section> -->*/
 <!--//END EVENTS -->
-<!--============================= DETAILED CHART =============================-->
+<!--============================= DETAILED CHART =============================
 <div class="detailed_chart">
     <div class="container">
         <div class="row">
@@ -266,7 +269,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--//END DETAILED CHART -->
 <!--============================= FOOTER =============================-->
 <footer>
