@@ -25,25 +25,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/animate.css'?>">
 	
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/icomoon.css'?>">
 	
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/magnific-popup.css'?>">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/flexslider.css'?>">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/style.css'?>">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="<?php echo base_url().'theme/js/modernizr-2.6.2.min.js'?>"></script>
 	
 	<!-- LayoutStyle <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"> -->
 	
@@ -369,22 +369,23 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+    <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+    <script src="<?php echo base_url().'theme/js/jquery.easing.1.3.js'?>"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
+    
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+    <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+    <script src="<?php echo base_url().'theme/js/jquery.flexslider-min.js'?>"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+    <script src="<?php echo base_url().'theme/js/jquery.magnific-popup.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/magnific-popup-options.js'?>"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
-	<script src="js/main.js"></script>
+    <script src="<?php echo base_url().'theme/js/main.js'?>"></script>
 
 	</body>
 </html>
