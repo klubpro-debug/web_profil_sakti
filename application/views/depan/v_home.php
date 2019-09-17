@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PERADI PALANGKA RAYA</title>
+    <title>UKM SAKTI UPR</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
@@ -44,14 +44,20 @@
         </div>
     </div>
     <div data-toggle="affix">
-        <div class="container nav-menu2">
+    <div class="col-md-6">
+    <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>">
+    </div>    
+    <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>
+                        <div class="col-md-2">
+                        <h3>UKM SAKTI</h3></a>
+            </div>
+                        <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -60,11 +66,22 @@
                                 <!--
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
-                                </li> -->
- 
+                                </li> 
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
-                                </li>
+                                </li>-->
+
+                                <li class="dropdown-menu
+                                ">
+								<a href="<?php echo site_url('advokat');?>">Klub</a>
+								<ul class="dropdown">
+									<li><a href="v_berita">Multimedia</a></li>
+									<li><a href="v_berita">Robotik</a></li>
+									<li><a href="v_berita">Programming</a></li>
+								</ul>
+							    </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Berita</a>
                                 </li>
@@ -191,7 +208,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
 </section>
 <!--//END OUR COURSES -->
 <!--============================= EVENTS =============================-->
-/*<!--
+<!--
 <section class="event">
     <div class="container">
         <div class="row">
@@ -232,7 +249,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
             </div>
         </div>
     </div>
-</section> -->*/
+</section> -->
 <!--//END EVENTS -->
 <!--============================= DETAILED CHART =============================
 <div class="detailed_chart">
@@ -278,7 +295,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
             <div class="col-md-3">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
+                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
                     <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">Perhimpunan Advokat Indonesia 2018</p>
                     </div>
