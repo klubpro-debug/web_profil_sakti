@@ -5,8 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contact</title>
+    <title>Kontak</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
     <!-- Google Fonts -->
@@ -42,7 +43,7 @@
           </div>
       </div>
   </div>
-  <div data-toggle="affix">
+  <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
     <div class="col-md-6">
     <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>">
     </div>    
@@ -58,25 +59,21 @@
             </div>
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
+                        <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('');?>">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Visimisi</a>
                                 </li>
                                 <!--
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
                                 </li> -->
- 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
-                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Berita</a>
                                 </li>
                                 <!--
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
-                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
                                 </li>
@@ -86,6 +83,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
                                 </li>
+                                <li class="dropdown">
+								<a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Multimedia</a></li>
+                                    <li><a href="#">Robotik</a></li>
+                                    <li><a href="#">Programming</a></li>
+								</ul>
+							    </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
@@ -167,54 +172,42 @@
     <!--//END  ABOUT IMAGE -->
     <!--============================= FOOTER =============================-->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="foot-logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
-                       <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
-                        </div>
+                     <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="sitemap">
-                            <h3>Menu Utama</h3>
-                            <ul>
-                                <li><a href="<?php echo site_url();?>">Home</a></li>
-                                <li><a href="<?php echo site_url('about');?>">About</a></li>
-                                <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                                <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                                <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                </div>
+                <div class="col-md-3">
+                    <div class="sitemap">
+                        <h3>Menu Utama</h3>
+                        <ul>
+                            <li><a href="<?php echo site_url();?>">Beranda</a></li>
+                            <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
+                            <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
+                            <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
+                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="address">
+                        <h3>Hubungi Kami</h3>
+                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
+                            <ul class="footer-social-icons">
+                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                      <div class="sitemap">
-                          <h3>Informasi</h3>
-                          <ul>
-                              <li><a href="<?php echo site_url('advokat');?>">advokat</a></li>
-                            
-                              <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                              <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                              <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                          </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="address">
-                            <h3>Hubungi Kami</h3>
-                              <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
-                                <ul class="footer-social-icons">
-                                    <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
             <!--//END FOOTER -->
             <!-- jQuery, Bootstrap JS. -->
             <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
