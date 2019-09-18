@@ -42,7 +42,7 @@
 				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
                 </div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
- <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+ <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
 				</div>
             </div>
         </div>
