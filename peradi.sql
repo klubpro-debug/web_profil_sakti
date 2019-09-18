@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 18 Sep 2019 pada 14.46
+-- Waktu pembuatan: 18 Sep 2019 pada 19.52
 -- Versi Server: 5.5.32
 -- Versi PHP: 5.4.19
 
@@ -212,6 +212,48 @@ CREATE TABLE IF NOT EXISTS `tbl_komentar` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `tbl_k_program`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_k_program` (
+  `k_program_id` int(11) NOT NULL AUTO_INCREMENT,
+  `k_program_nama` varchar(70) DEFAULT NULL,
+  `k_program_deskripsi` text,
+  `k_program_photo` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`k_program_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data untuk tabel `tbl_k_program`
+--
+
+INSERT INTO `tbl_k_program` (`k_program_id`, `k_program_nama`, `k_program_deskripsi`, `k_program_photo`) VALUES
+(10, 'Klub Programming', 'Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.', '25bc41953ccdcf3eec1340677b347ff0.png');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_k_robo`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_k_robo` (
+  `k_robo_id` int(11) NOT NULL AUTO_INCREMENT,
+  `k_robo_nama` varchar(70) DEFAULT NULL,
+  `k_robo_deskripsi` text,
+  `k_robo_photo` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`k_robo_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data untuk tabel `tbl_k_robo`
+--
+
+INSERT INTO `tbl_k_robo` (`k_robo_id`, `k_robo_nama`, `k_robo_deskripsi`, `k_robo_photo`) VALUES
+(10, 'Klub Robotik', 'Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.', '710a53eaa80f2f19d4480872d19ca61d.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `tbl_log_aktivitas`
 --
 
@@ -297,7 +339,7 @@ CREATE TABLE IF NOT EXISTS `tbl_pengunjung` (
   `pengunjung_ip` varchar(40) DEFAULT NULL,
   `pengunjung_perangkat` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`pengunjung_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=939 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=940 ;
 
 --
 -- Dumping data untuk tabel `tbl_pengunjung`
@@ -1242,7 +1284,8 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (935, '2019-09-16 12:17:42', '180.246.148.165', 'Chrome'),
 (936, '2019-09-17 01:23:47', '::1', 'Chrome'),
 (937, '2019-09-17 17:00:47', '::1', 'Chrome'),
-(938, '2019-09-18 02:20:56', '127.0.0.1', 'Chrome');
+(938, '2019-09-18 02:20:56', '127.0.0.1', 'Chrome'),
+(939, '2019-09-18 17:42:13', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
