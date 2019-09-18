@@ -73,6 +73,7 @@
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/agenda'?>">
             <i class="fa fa-calendar"></i> <span>Agenda</span>
@@ -80,15 +81,16 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="<?php echo base_url().'admin/pengumuman'?>">
-            <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
+            <i class="fa fa-volume-up"></i> <span>Visimisi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/files'?>">
             <i class="fa fa-download"></i> <span>Download</span>
@@ -96,7 +98,7 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
