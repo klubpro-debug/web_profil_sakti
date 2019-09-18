@@ -10,10 +10,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Album</title>
+  <title>UKM SAKTI | Klub Multimedia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
@@ -75,6 +76,7 @@
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/agenda'?>">
             <i class="fa fa-calendar"></i> <span>Agenda</span>
@@ -82,15 +84,16 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="<?php echo base_url().'admin/pengumuman'?>">
-            <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
+            <i class="fa fa-volume-up"></i> <span>Visimisi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/files'?>">
             <i class="fa fa-download"></i> <span>Download</span>
@@ -98,8 +101,8 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
-        <li class="treeview active">
+        </li>-->
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
             <span>Gallery</span>
@@ -108,14 +111,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
+            <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
 
- <li>
+        <li>
           <a href="<?php echo base_url().'admin/advokat'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Data Advokat</span>
+            <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
@@ -192,12 +195,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Data Album
+        Data Klub Programming
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Album</li>
+        <li class="active">Klub Programming</li>
       </ol>
     </section>
 
@@ -209,18 +212,16 @@
 
           <div class="box">
             <div class="box-header">
-              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Album</a>
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Klub Programming</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-striped" style="font-size:13px;">
                 <thead>
                 <tr>
-          					<th>Gambar</th>
-          					<th>Album</th>
-          					<th>Tanggal</th>
-          					<th>Author</th>
-          					<th>Jumlah</th>
+          					<th>Photo</th>
+          					<th>Nama</th>
+                    <th>Deskripsi</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
@@ -229,23 +230,23 @@
           					$no=0;
           					foreach ($data->result_array() as $i) :
           					   $no++;
-          					   $album_id=$i['album_id'];
-          					   $album_nama=$i['album_nama'];
-          					   $album_tanggal=$i['tanggal'];
-          					   $album_author=$i['album_author'];
-          					   $album_cover=$i['album_cover'];
-          					   $album_jumlah=$i['album_count'];
+          					   $id=$i['k_program_id'];
+          					   $nama=$i['k_program_nama'];
+                       $desk=$i['k_program_deskripsi'];
+                       $photo=$i['k_program_photo'];
 
                     ?>
                 <tr>
-                  <td><img src="<?php echo base_url().'assets/images/'.$album_cover;?>" style="width:80px;"></td>
-                  <td><?php echo $album_nama;?></td>
-        				  <td><?php echo $album_tanggal;?></td>
-        				  <td><?php echo $album_author;?></td>
-        				  <td><?php echo $album_jumlah;?></td>
+                  <?php if(empty($photo)):?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
+                  <?php else:?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
+                  <?php endif;?>
+        				  <td><?php echo $nama;?></td>
+                  <td><?php echo $desk;?></td>
                   <td style="text-align:right;">
-                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $album_id;?>"><span class="fa fa-pencil"></span></a>
-                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $album_id;?>"><span class="fa fa-trash"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
                   </td>
                 </tr>
 				<?php endforeach;?>
@@ -263,7 +264,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
- <footer class="main-footer">
+<footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
@@ -472,22 +473,30 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Add Album</h4>
+                        <h4 class="modal-title" id="myModalLabel">Add Klub Programming</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/album/simpan_album'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/program/simpan_program'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Nama Album</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xnama_album" class="form-control" id="inputUserName" placeholder="Nama Album" required>
+                                            <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Cover Album</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
                                         <div class="col-sm-7">
-                                            <input type="file" name="filefoto" required/>
+                                            <!--<input type="text" name="xdesk" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
+                                        <div class="col-sm-7">
+                                            <input type="file" name="filefoto"/>
                                         </div>
                                     </div>
 
@@ -504,34 +513,42 @@
 
   <!--Modal Edit Album-->
   <?php foreach ($data->result_array() as $i) :
-              $album_id=$i['album_id'];
-              $album_nama=$i['album_nama'];
-              $album_tanggal=$i['tanggal'];
-              $album_author=$i['album_author'];
-              $album_cover=$i['album_cover'];
-              $album_jumlah=$i['album_count'];
+              $id=$i['k_program_id'];
+              $nama=$i['k_program_nama'];
+              $desk=$i['k_program_deskripsi'];
+              $photo=$i['k_program_photo'];
             ?>
 
-        <div class="modal fade" id="ModalEdit<?php echo $album_id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Edit Album</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Klub Programming</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/album/update_album'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/program/update_program'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-                                <input type="hidden" name="kode" value="<?php echo $album_id;?>"/>
-                                <input type="hidden" value="<?php echo $album_cover;?>" name="gambar">
-                                  <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Nama Album</label>
+                                <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                                <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                                    
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xnama_album" class="form-control" value="<?php echo $album_nama;?>" id="inputUserName" placeholder="Nama Album" required>
+                                            <input type="text" name="xnama" value="<?php echo $nama;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" value="<?php echo $desk;?>" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required><?php echo $desk;?></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Cover Album</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
                                         <div class="col-sm-7">
                                             <input type="file" name="filefoto"/>
                                         </div>
@@ -550,26 +567,24 @@
 	<!--Modal Edit Album-->
 
 	<?php foreach ($data->result_array() as $i) :
-              $album_id=$i['album_id'];
-              $album_nama=$i['album_nama'];
-              $album_tanggal=$i['tanggal'];
-              $album_author=$i['album_author'];
-              $album_cover=$i['album_cover'];
-              $album_jumlah=$i['album_count'];
+              $id=$i['k_program_id'];
+              $nama=$i['k_program_nama'];
+              $desk=$i['k_program_deskripsi'];
+              $photo=$i['k_program_photo'];
             ?>
 	<!--Modal Hapus Pengguna-->
-        <div class="modal fade" id="ModalHapus<?php echo $album_id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="ModalHapus<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus Album</h4>
+                        <h4 class="modal-title" id="myModalLabel">Hapus Klub Programming</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/album/hapus_album'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/program/hapus_program'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-							       <input type="hidden" name="kode" value="<?php echo $album_id;?>"/>
-                     <input type="hidden" value="<?php echo $album_cover;?>" name="gambar">
-                            <p>Apakah Anda yakin mau menghapus Posting <b><?php echo $album_nama;?></b> ?</p>
+							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                     <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                            <p>Apakah Anda yakin mau menghapus Klub Programming <b><?php echo $nama;?></b> ?</p>
 
                     </div>
                     <div class="modal-footer">
@@ -632,7 +647,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Album Berhasil disimpan ke database.",
+                    text: "Klub Programming Berhasil disimpan ke database.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
@@ -644,7 +659,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Info',
-                    text: "Album berhasil di update",
+                    text: "Klub Programming berhasil di update",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
@@ -656,7 +671,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Album Berhasil dihapus.",
+                    text: "Klub Programming Berhasil dihapus.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
