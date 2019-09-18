@@ -11,7 +11,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PERADI | Dashboard</title>
+  <title>UKM SAKTI | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -85,6 +85,7 @@
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/agenda'?>">
             <i class="fa fa-calendar"></i> <span>Agenda</span>
@@ -92,15 +93,16 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="<?php echo base_url().'admin/pengumuman'?>">
-            <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
+            <i class="fa fa-volume-up"></i> <span>Visimisi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/files'?>">
             <i class="fa fa-download"></i> <span>Download</span>
@@ -108,7 +110,7 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
@@ -122,10 +124,9 @@
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
-
         <li>
           <a href="<?php echo base_url().'admin/advokat'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Data Advokat</span>
+            <i class="fa fa-graduation-cap"></i> <span>Data Klub</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
@@ -143,7 +144,6 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
             <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-
           </ul>
         </li>
         -->
