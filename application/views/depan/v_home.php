@@ -35,12 +35,15 @@
     <div class="header-topbar">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 col-sm-8 col-md-9">
+                <div class="col-xs-2 col-sm-2 col-md-2">
  <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                
+                <div class="col-xs-8 col-sm-8 col-md-8">
+				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
                 </div>
+				<div class="col-xs-2 col-sm-2 col-md-2">
+ <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+				</div>
             </div>
         </div>
     </div>
@@ -58,7 +61,6 @@
 						<div class="col-md-2">
 						<p> UKM SAKTI</p>
 						</div>
-
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
