@@ -107,21 +107,21 @@
 <!--============================= EVENTS =============================-->
 <section class="events">
     <div class="container">
-        <div class="row">
+        
+                <!-- Nav tabs -->
+        <!--<div class="row">
             <div class="col-md-4">
-                <h2 class="event-title">Pengumuman</h2>
+                <h2 class="event-title">Visi Misi</h2>
             </div>
             <div class="col-md-8">
-                <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item nav-tab1">
                         <a class="nav-link tab-list active" data-toggle="tab" href="#upcoming-events" role="tab">Pengumuman Terbaru </a>
                     </li>
-
                 </ul>
             </div>
         </div>
-        <br>
+        <br>-->
         <div class="row">
             <!-- Tab panes -->
             <div class="tab-content">
@@ -129,12 +129,12 @@
                   <?php foreach($data->result() as $row):?>
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-2">
+                            <!--<div class="col-md-2">
                                 <div class="event-date">
                                     <h4><?php echo date("d", strtotime($row->pengumuman_tanggal));?></h4> <span><?php echo date("M Y", strtotime($row->pengumuman_tanggal));?></span>
                                 </div>
                                 <span class="event-time"><?php echo date("H:i", strtotime($row->pengumuman_tanggal)).' WIB';?></span>
-                            </div>
+                            </div>-->
                             <div class="col-md-10">
                                 <div class="event-heading">
                                     <h3><?php echo $row->pengumuman_judul;?></h3>
@@ -163,38 +163,27 @@
             <div class="col-md-3">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
+                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
-                    <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
+                     <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="sitemap">
                         <h3>Menu Utama</h3>
                         <ul>
-                            <li><a href="<?php echo site_url();?>">Home</a></li>
-                            <li><a href="<?php echo site_url('about');?>">About</a></li>
-                            <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                            <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                            <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
+                            <li><a href="<?php echo site_url();?>">Beranda</a></li>
+                            <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
+                            <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
+                            <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
+                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="sitemap">
-                      <h3>Informatika</h3>
-                      <ul>
-                          <li><a href="<?php echo site_url('advokat');?>">advokat</a></li>
-                             <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                          <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                          <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                      </ul>
-                  </div>
-                </div>
-                <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
+                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>

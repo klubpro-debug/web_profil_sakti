@@ -516,9 +516,10 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Bidang Keahlian</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xahli" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>
+                                            <!--<input type="text" name="xahli" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xahli" id="inputUserName" placeholder="Deskripsi ..." required></textarea>
                                         </div>
                                     </div>
 
