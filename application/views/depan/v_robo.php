@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Klub</title>
+    <title>Klub Robotik</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
