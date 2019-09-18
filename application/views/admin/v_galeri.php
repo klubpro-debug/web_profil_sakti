@@ -75,6 +75,7 @@
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/agenda'?>">
             <i class="fa fa-calendar"></i> <span>Agenda</span>
@@ -82,15 +83,16 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li>-->
         <li>
           <a href="<?php echo base_url().'admin/pengumuman'?>">
-            <i class="fa fa-volume-up"></i> <span>Pengumuman</span>
+            <i class="fa fa-volume-up"></i> <span>Visimisi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
         </li>
+        <!--
         <li>
           <a href="<?php echo base_url().'admin/files'?>">
             <i class="fa fa-download"></i> <span>Download</span>
@@ -98,8 +100,8 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
-        <li class="treeview active">
+        </li>-->
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
             <span>Gallery</span>
@@ -109,13 +111,13 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
-            <li class="active"><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
+            <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
 
         <li>
           <a href="<?php echo base_url().'admin/advokat'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Data Advokat</span>
+            <i class="fa fa-graduation-cap"></i> <span>Data Klub</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
