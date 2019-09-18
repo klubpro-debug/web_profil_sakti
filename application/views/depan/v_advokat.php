@@ -88,9 +88,9 @@
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
                                 </li>
                                 <li class="dropdown">
-								<a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
+								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Multimedia</a></li>
+									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
                                     <li><a href="#">Robotik</a></li>
                                     <li><a href="#">Programming</a></li>
 								</ul>
@@ -125,11 +125,18 @@
                           <?php else:?>
                             <img src="<?php echo base_url().'assets/images/'.$row->advokat_photo;?>" class="img-fluid" alt="#">
                           <?php endif;?>
-                            <p class="text-center mt-3"><span><?php echo $row->advokat_nama;?></span>
-                                <br>
-                                <?php echo $row->advokat_ahli;?></p>
+                            
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9">
+                    <p class="mt-3"><span><?php echo $row->advokat_nama;?></span>
+                                <br>
+                    <div class="col-md-10">
+                    <?php echo $row->advokat_ahli;?></p>
+                    </div>
+                                
+                    </div>
+                   
                 <?php endforeach;?>
               </div>
             <!-- End row -->
