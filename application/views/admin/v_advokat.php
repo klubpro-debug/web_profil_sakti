@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Data Klub</title>
+  <title>UKM SAKTI | Klub Multimedia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
@@ -118,7 +118,15 @@
 
         <li>
           <a href="<?php echo base_url().'admin/advokat'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Data Klub</span>
+            <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo base_url().'admin/robo'?>">
+            <i class="fa fa-graduation-cap"></i> <span>Klub Robotik</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>

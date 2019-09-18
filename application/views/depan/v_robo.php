@@ -120,19 +120,19 @@
                 <?php foreach ($data->result() as $row) : ?>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="admission_insruction">
-                          <?php if(empty($row->advokat_photo)):?>
+                          <?php if(empty($row->k_robo_photo)):?>
                             <img src="<?php echo base_url().'assets/images/blank.png';?>" class="img-fluid" alt="#">
                           <?php else:?>
-                            <img src="<?php echo base_url().'assets/images/'.$row->advokat_photo;?>" class="img-fluid" alt="#">
+                            <img src="<?php echo base_url().'assets/images/'.$row->k_robo_photo;?>" class="img-fluid" alt="#">
                           <?php endif;?>
                             
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-9">
-                    <p class="mt-3"><span><?php echo $row->advokat_nama;?></span>
+                    <p class="mt-3"><span><?php echo $row->k_robo_nama;?></span>
                                 <br>
                     <div class="col-md-10">
-                    <?php echo $row->advokat_ahli;?></p>
+                    <?php echo $row->k_robo_deskripsi;?></p>
                     </div>
                                 
                     </div>

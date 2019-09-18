@@ -80,10 +80,10 @@
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
                                 </li>
                                 <li class="dropdown">
-								<a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
+								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
-									<li><a href="#">Multimedia</a></li>
-                                    <li><a href="#">Robotik</a></li>
+									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
                                     <li><a href="#">Programming</a></li>
 								</ul>
 							    </li>

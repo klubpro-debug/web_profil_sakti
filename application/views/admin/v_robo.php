@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Add Post</title>
+  <title>UKM SAKTI | Klub Multimedia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
@@ -19,23 +19,15 @@
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/daterangepicker/daterangepicker.css'?>">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datepicker/datepicker3.css'?>">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/iCheck/all.css'?>">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/colorpicker/bootstrap-colorpicker.min.css'?>">
-  <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/timepicker/bootstrap-timepicker.min.css'?>">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/select2/select2.min.css'?>">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+
 
 
 </head>
@@ -45,7 +37,6 @@
    <?php
     $this->load->view('admin/v_header');
   ?>
-
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -63,7 +54,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-newspaper-o"></i>
             <span>Berita</span>
@@ -73,9 +64,17 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/tulisan'?>"><i class="fa fa-list"></i> List Berita</a></li>
-            <li class="active"><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
+            <li><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
             <li><a href="<?php echo base_url().'admin/kategori'?>"><i class="fa fa-wrench"></i> Kategori</a></li>
           </ul>
+        </li>
+        <li>
+          <a href="<?php echo base_url().'admin/pengguna'?>">
+            <i class="fa fa-users"></i> <span>Pengguna</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
         </li>
         <!--
         <li>
@@ -149,6 +148,7 @@
           </ul>
         </li>
   -->
+
         <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
@@ -187,120 +187,76 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Berita
+        Data robo
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Berita</a></li>
-        <li class="active">Add Berita</li>
+        <li class="active">robo</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-
-      <!-- SELECT2 EXAMPLE -->
-      <div class="box box-default">
-        <div class="box-header with-border">
-          <h3 class="box-title">Post Berita</h3>
-        </div>
-
-		<form action="<?php echo base_url().'admin/tulisan/simpan_tulisan'?>" method="post" enctype="multipart/form-data">
-
-        <!-- /.box-header -->
-        <div class="box-body">
-          <div class="row">
-            <div class="col-md-10">
-              <input type="text" name="xjudul" class="form-control" placeholder="Judul berita atau artikel" required/>
-            </div>
-            <!-- /.col -->
-            <div class="col-md-2">
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-flat pull-right"><span class="fa fa-pencil"></span> Publish</button>
-              <!-- /.form-group -->
-            </div>
-            <!-- /.col -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.box-body -->
-
-      </div>
-	  </div>
-      <!-- /.box -->
-
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-xs-12">
+          <div class="box">
 
-          <div class="box box-danger">
+          <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Berita</h3>
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add robo</a>
             </div>
+            <!-- /.box-header -->
             <div class="box-body">
-
-			<textarea id="ckeditor" name="xisi" required></textarea>
-
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-        </div>
-        <!-- /.col (left) -->
-        <div class="col-md-4">
-          <div class="box box-primary">
-            <div class="box-header">
-              <h3 class="box-title">Pengaturan Lainnya</h3>
-            </div>
-            <div class="box-body">
-
-              <div class="form-group">
-                <label>Kategori</label>
-                <select class="form-control select2" name="xkategori" style="width: 100%;" required>
-                  <option value="">-Pilih-</option>
-				  <?php
-					$no=0;
-					foreach ($kat->result_array() as $i) :
-					   $no++;
-                       $kategori_id=$i['kategori_id'];
-                       $kategori_nama=$i['kategori_nama'];
+              <table id="example1" class="table table-striped" style="font-size:13px;">
+                <thead>
+                <tr>
+          					<th>Photo</th>
+          					<th>Nama</th>
+                    <th>Deskripsi</th>
+                    <th style="text-align:right;">Aksi</th>
+                </tr>
+                </thead>
+                <tbody>
+          				<?php
+          					$no=0;
+          					foreach ($data->result_array() as $i) :
+          					   $no++;
+          					   $id=$i['k_robo_id'];
+          					   $nama=$i['k_robo_nama'];
+                       $desk=$i['k_robo_deskripsi'];
+                       $photo=$i['k_robo_photo'];
 
                     ?>
-                  <option value="<?php echo $kategori_id;?>"><?php echo $kategori_nama;?></option>
-				  <?php endforeach;?>
-                </select>
-              </div>
-
-			  <div class="form-group">
-                <label>Gambar</label>
-                <input type="file" name="filefoto" style="width: 100%;" required>
-              </div>
-              <!-- /.form group -->
-			 <div class="form-group">
-              <!--<label>
-                  <input type="checkbox" class="minimal" name="ximgslider" value="1">
-                   Tampilkan pada Image Slider
-                </label>
-              </div>-->
-
+                <tr>
+                  <?php if(empty($photo)):?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
+                  <?php else:?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
+                  <?php endif;?>
+        				  <td><?php echo $nama;?></td>
+                  <td><?php echo $desk;?></td>
+                  <td style="text-align:right;">
+                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
+                  </td>
+                </tr>
+				<?php endforeach;?>
+                </tbody>
+              </table>
             </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
-		</form>
-
-          <!-- /.box -->
         </div>
-        <!-- /.col (right) -->
+        <!-- /.col -->
       </div>
       <!-- /.row -->
-
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+<footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
@@ -503,114 +459,220 @@
 </div>
 <!-- ./wrapper -->
 
+    <!--Modal Add Pengguna-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add robo</h4>
+                    </div>
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/robo/simpan_robo'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
+                                        <div class="col-sm-7">
+                                            <input type="file" name="filefoto"/>
+                                        </div>
+                                    </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Simpan</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+  <!--Modal Edit Album-->
+  <?php foreach ($data->result_array() as $i) :
+              $id=$i['k_robo_id'];
+              $nama=$i['k_robo_nama'];
+              $desk=$i['k_robo_deskripsi'];
+              $photo=$i['k_robo_photo'];
+            ?>
+
+        <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Edit robo</h4>
+                    </div>
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/robo/update_robo'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+                                <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                                <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                                    
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xnama" value="<?php echo $nama;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" value="<?php echo $desk;?>" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required><?php echo $desk;?></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
+                                        <div class="col-sm-7">
+                                            <input type="file" name="filefoto"/>
+                                        </div>
+                                    </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Simpan</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+  <?php endforeach;?>
+	<!--Modal Edit Album-->
+
+	<?php foreach ($data->result_array() as $i) :
+              $id=$i['k_robo_id'];
+              $nama=$i['k_robo_nama'];
+              $desk=$i['k_robo_deskripsi'];
+              $photo=$i['k_robo_photo'];
+            ?>
+	<!--Modal Hapus Pengguna-->
+        <div class="modal fade" id="ModalHapus<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Hapus robo</h4>
+                    </div>
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/robo/hapus_robo'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                     <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                            <p>Apakah Anda yakin mau menghapus robo <b><?php echo $nama;?></b> ?</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Hapus</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	<?php endforeach;?>
+
+
+
+
 <!-- jQuery 2.2.3 -->
 <script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
-<!-- Select2 -->
-<script src="<?php echo base_url().'assets/plugins/select2/select2.full.min.js'?>"></script>
-<!-- InputMask -->
-<script src="<?php echo base_url().'assets/plugins/input-mask/jquery.inputmask.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/input-mask/jquery.inputmask.date.extensions.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/input-mask/jquery.inputmask.extensions.js'?>"></script>
-<!-- date-range-picker -->
-<script src="<?php echo base_url().'assets/plugins/daterangepicker/daterangepicker.js'?>"></script>
-<!-- bootstrap datepicker -->
-<script src="<?php echo base_url().'assets/plugins/datepicker/bootstrap-datepicker.js'?>"></script>
-<!-- bootstrap color picker -->
-<script src="<?php echo base_url().'assets/plugins/colorpicker/bootstrap-colorpicker.min.js'?>"></script>
-<!-- bootstrap time picker -->
-<script src="<?php echo base_url().'assets/plugins/timepicker/bootstrap-timepicker.min.js'?>"></script>
-<!-- SlimScroll 1.3.0 -->
+<!-- DataTables -->
+<script src="<?php echo base_url().'assets/plugins/datatables/jquery.dataTables.min.js'?>"></script>
+<script src="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.min.js'?>"></script>
+<!-- SlimScroll -->
 <script src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>"></script>
-<!-- iCheck 1.0.1 -->
-<script src="<?php echo base_url().'assets/plugins/iCheck/icheck.min.js'?>"></script>
 <!-- FastClick -->
 <script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url().'assets/dist/js/app.min.js'?>"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
-<script src="<?php echo base_url().'assets/ckeditor/ckeditor.js'?>"></script>
-<!-- Page script -->
-
+<script type="text/javascript" src="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.js'?>"></script>
+<!-- page script -->
 <script>
   $(function () {
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-
-    CKEDITOR.replace('ckeditor');
-
-
-  });
-</script>
-
-<script>
-  $(function () {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-
-    //Datemask dd/mm/yyyy
-    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-    //Datemask2 mm/dd/yyyy
-    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
-    //Money Euro
-    $("[data-mask]").inputmask();
-
-    //Date range picker
-    $('#reservation').daterangepicker();
-    //Date range picker with time picker
-    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
-    //Date range as a button
-    $('#daterange-btn').daterangepicker(
-        {
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
-        },
-        function (start, end) {
-          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        }
-    );
-
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
-
-    //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-      checkboxClass: 'icheckbox_minimal-blue',
-      radioClass: 'iradio_minimal-blue'
-    });
-    //Red color scheme for iCheck
-    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-      checkboxClass: 'icheckbox_minimal-red',
-      radioClass: 'iradio_minimal-red'
-    });
-    //Flat red color scheme for iCheck
-    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-      checkboxClass: 'icheckbox_flat-green',
-      radioClass: 'iradio_flat-green'
-    });
-
-    //Colorpicker
-    $(".my-colorpicker1").colorpicker();
-    //color picker with addon
-    $(".my-colorpicker2").colorpicker();
-
-    //Timepicker
-    $(".timepicker").timepicker({
-      showInputs: false
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
     });
   });
 </script>
+<?php if($this->session->flashdata('msg')=='error'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Error',
+                    text: "Password dan Ulangi Password yang Anda masukan tidak sama.",
+                    showHideTransition: 'slide',
+                    icon: 'error',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#FF4859'
+                });
+        </script>
+
+    <?php elseif($this->session->flashdata('msg')=='success'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "robo Berhasil disimpan ke database.",
+                    showHideTransition: 'slide',
+                    icon: 'success',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+    <?php elseif($this->session->flashdata('msg')=='info'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Info',
+                    text: "robo berhasil di update",
+                    showHideTransition: 'slide',
+                    icon: 'info',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#00C9E6'
+                });
+        </script>
+    <?php elseif($this->session->flashdata('msg')=='success-hapus'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "robo Berhasil dihapus.",
+                    showHideTransition: 'slide',
+                    icon: 'success',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
+    <?php else:?>
+
+    <?php endif;?>
 </body>
 </html>
