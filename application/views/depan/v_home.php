@@ -28,7 +28,12 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
-	
+	<style>
+        .col1{
+	box-shadow: inset 3px -2px  #2F4F4F  , inset -3px 3px 3px  #2F4F4F  ;
+	background-color: 	#FFFFFF	 ;
+}
+    </style>
 </head>
 
 <body>
@@ -194,15 +199,19 @@
         </div>
         <div class="row">
           <?php foreach ($berita->result() as $row) :?>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="courses_box mb-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col1" >
+                <div  class="courses_box mb-4">
+             
                     <div class="course-img-wrap">
                         <img src="<?php echo base_url().'assets/images/'.$row->tulisan_gambar;?>" class="img-fluid" alt="courses-img">
                     </div>
                     <!-- // end .course-img-wrap -->
-                    <a href="<?php echo site_url('artikel/'.$row->tulisan_judul);?>" class="course-box-content">
-                        <h3 style="text-align:center;"><?php echo $row->tulisan_judul;?></h3>
-                    </a>
+                    
+                        <a href="<?php echo site_url('artikel/'.$row->tulisan_judul);?>" class="course-box-content">
+                            <h3 style="text-align:center;"><?php echo $row->tulisan_judul;?></h3>
+                        </a>                   
+               
+
                 </div>
             </div>
           <?php endforeach;?>
