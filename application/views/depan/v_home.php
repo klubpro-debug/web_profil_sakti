@@ -339,7 +339,6 @@
             </div>
         </footer>
         <!--//END FOOTER -->
-
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
