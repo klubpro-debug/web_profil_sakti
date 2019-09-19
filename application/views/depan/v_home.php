@@ -36,9 +36,6 @@
     footer{
         background:green;
     }
-    .judul{
-        font-family: Castellar;
-    }
     </style>
 
 </head>
