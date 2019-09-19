@@ -28,12 +28,7 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
-	<style>
-        .col1{
-	box-shadow: inset 3px -2px  #2F4F4F  , inset -3px 3px 3px  #2F4F4F  ;
-	background-color: 	#FFFFFF	 ;
-}
-    </style>
+
 </head>
 
 <body>
@@ -208,7 +203,7 @@
                     <!-- // end .course-img-wrap -->
                     
                         <a href="<?php echo site_url('artikel/'.$row->tulisan_judul);?>" class="course-box-content">
-                            <h3 style="text-align:center;"><?php echo $row->tulisan_judul;?></h3>
+                            <h3 style="text-align:center;height: 230px; "><?php echo $row->tulisan_judul;?></h3>
                         </a>                   
                
 
