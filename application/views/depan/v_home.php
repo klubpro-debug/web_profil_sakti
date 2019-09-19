@@ -28,6 +28,7 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
+
 </head>
 
 <body>
@@ -96,10 +97,7 @@
                                     <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
-                               </li>
-                               <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
-                                </li>
+							                  </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
@@ -196,15 +194,19 @@
         </div>
         <div class="row">
           <?php foreach ($berita->result() as $row) :?>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="courses_box mb-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col1" >
+                <div  class="courses_box mb-4">
+             
                     <div class="course-img-wrap">
                         <img src="<?php echo base_url().'assets/images/'.$row->tulisan_gambar;?>" class="img-fluid" alt="courses-img">
                     </div>
                     <!-- // end .course-img-wrap -->
-                    <a href="<?php echo site_url('artikel/'.$row->tulisan_judul);?>" class="course-box-content">
-                        <h3 style="text-align:center; height: 230px;"><?php echo $row->tulisan_judul;?></h3>
-                    </a>
+                    
+                        <a href="<?php echo site_url('artikel/'.$row->tulisan_judul);?>" class="course-box-content">
+                            <h3 style="text-align:center;height: 230px; "><?php echo $row->tulisan_judul;?></h3>
+                        </a>                   
+               
+
                 </div>
             </div>
           <?php endforeach;?>
