@@ -126,7 +126,7 @@
         </li>
         <li>
           <a href="<?php echo base_url().'admin/youtube'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Klub youtubetik</span>
+            <i class="fa fa-graduation-cap"></i> <span>Klub Robotik</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
