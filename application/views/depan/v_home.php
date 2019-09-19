@@ -33,7 +33,9 @@
         background-image: linear-gradient(yellow,green);
 	font-family: merriweather;
     }
-
+    footer{
+        background:green;
+    }
     </style>
 
 </head>
@@ -312,12 +314,12 @@
 <!--//END DETAILED CHART -->
 <!--============================= FOOTER =============================-->
 <footer>
-    <div class="container">
+    <div class="container con1">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 ">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
+                        <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
                      <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
