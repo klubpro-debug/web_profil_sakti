@@ -40,9 +40,6 @@
         </div>
     </div>
   <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
-    <div class="col-md-6">
-    <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>">
-    </div>    
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
