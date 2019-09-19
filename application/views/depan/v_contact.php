@@ -26,16 +26,17 @@
   <!--============================= HEADER =============================-->
     <div class="header-topbar">
         <div class="container">
-            <div class="row">
+        <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo upr.png'?>">				
                 </div>
                 <div class="col-xs-8 col-sm-8 col-md-8">
-				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
+				<h2 align="center"> <b> SARANA KREATIFITAS TEKNOLOGI INFORMASI</b></h2>
                 </div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/Logo Sakti.png'?>">				
 				</div>
+            </div>
             </div>
         </div>
     </div>
@@ -88,7 +89,7 @@
                                     <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
+                                  <a class="nav-link" href="<?php echo site_url('contact');?>"><b>Kontak Kami</b></a>
                                 </li>
                              </ul>
                   </div>
@@ -173,7 +174,7 @@
             <div class="col-md-3">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
+                    <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
                      <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>

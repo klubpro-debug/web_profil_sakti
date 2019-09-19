@@ -140,7 +140,7 @@
         <div class="col-md-3">
             <div class="foot-logo">
                 <a href="<?php echo site_url();?>">
-                    <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
+                <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                 </a>
                 <p><?php echo date('Y');?> © copyright by <a href="http://mfikri.com" target="_blank">M Fikri</a>. <br>All rights reserved.</p>
                 </div>
