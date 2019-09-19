@@ -97,7 +97,10 @@
                                     <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
-							                  </li>
+                               </li>
+                               <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
@@ -108,63 +111,71 @@
             </div>
         </div>
       </div>
+	  
+<!--============================= carousel =============================-->
 <section>
-    <div class="slider_img layout_two">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Cecil B. DeMille</h1>
-                            <h4>Prinsip merupakan hukum alam yang tidak dapat dilanggar. Kita tidak mungkin
-melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melanggar hukum-hukum itu.</h4>
-                            <div class="slider-btn">
-                                <a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Thomas Malthus</h1>
-                            <h4>Telah tampak bahwa dari hukum-hukum alam kita yang tak terelakkan, beberapa manusia harus menderita karena kekurangan. Ini adalah orang-orang yang tidak bahagia yang, dalam undian besar kehidupan, telah melukis sesuatu yang kosong.</h4>
-                            <div class="slider-btn">
-                                <a href="<?php echo site_url('advokat');?>" class="btn btn-default">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
-                    <div class="carousel-caption d-md-block">
-                        <div class="slider_title">
-                            <h1>Max Planck</h1>
-                            <h4>Kita tidak punya hak untuk berasumsi bahwa setiap hukum-hukum fisika yang ada, atau jika mereka telah ada sampai sekarang, bahwa mereka akan terus ada dengan cara yang sama di masa depan.</h4>
-                            <div class="slider-btn">
-                                <a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                <i class="icon-arrow-left fa-slider" aria-hidden="true"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                <i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
+	<div class="container">
+		<div ="row">
+			<div ="col-md-8">
+				<div class="slider_img layout_two">
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
+								<div class="carousel-caption d-md-block">
+									<div class="slider_title">
+										<h1>Cecil B. DeMille</h1>
+										<h4>Prinsip merupakan hukum alam yang tidak dapat dilanggar. Kita tidak mungkin
+			melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melanggar hukum-hukum itu.</h4>
+										<div class="slider-btn">
+											<a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
+								<div class="carousel-caption d-md-block">
+									<div class="slider_title">
+										<h1>Thomas Malthus</h1>
+										<h4>Telah tampak bahwa dari hukum-hukum alam kita yang tak terelakkan, beberapa manusia harus menderita karena kekurangan. Ini adalah orang-orang yang tidak bahagia yang, dalam undian besar kehidupan, telah melukis sesuatu yang kosong.</h4>
+										<div class="slider-btn">
+											<a href="<?php echo site_url('advokat');?>" class="btn btn-default">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+								<div class="carousel-caption d-md-block">
+									<div class="slider_title">
+										<h1>Max Planck</h1>
+										<h4>Kita tidak punya hak untuk berasumsi bahwa setiap hukum-hukum fisika yang ada, atau jika mereka telah ada sampai sekarang, bahwa mereka akan terus ada dengan cara yang sama di masa depan.</h4>
+										<div class="slider-btn">
+											<a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<i class="icon-arrow-left fa-slider" aria-hidden="true"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<i class="icon-arrow-right fa-slider" aria-hidden="true"></i>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <!--//END HEADER -->
 <!--============================= ABOUT =============================-->
@@ -327,6 +338,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
             </div>
         </footer>
         <!--//END FOOTER -->
+
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>

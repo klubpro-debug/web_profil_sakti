@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Klub Robotik</title>
+    <title>Link Youtube</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
@@ -110,28 +110,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="mb-5">Keterangan Klub</h2>
+                    <h2 class="mb-5">Promosi Youtube</h2>
                 </div>
             </div>
             <div class="row">
                 <?php foreach ($data->result() as $row) : ?>
                     <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="admission_insruction">
-                          <?php if(empty($row->k_robo_photo)):?>
+                        <!--<div class="admission_insruction">
+                          <?php if(empty($row->k_youtube_photo)):?>
                             <img src="<?php echo base_url().'assets/images/blank.png';?>" class="img-fluid" alt="#">
                           <?php else:?>
-                            <img src="<?php echo base_url().'assets/images/'.$row->k_robo_photo;?>" class="img-fluid" alt="#">
+                            <img src="<?php echo base_url().'assets/images/'.$row->k_youtube_photo;?>" class="img-fluid" alt="#">
                           <?php endif;?>
                             
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-9">
-                    <p class="mt-3"><span><?php echo $row->k_robo_nama;?></span>
+                    <p class="mt-3"><span><?php echo $row->k_youtube_nama;?></span>
                                 <br>
                     <div class="col-md-10">
-                    <?php echo $row->k_robo_deskripsi;?></p>
+                    </p>
+                    <iframe width="560" height="315" src="<?php echo $row->k_youtube_deskripsi;?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                                
+                    
+                             
                     </div>
                    
                 <?php endforeach;?>

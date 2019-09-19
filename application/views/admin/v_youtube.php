@@ -10,10 +10,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Gallery</title>
+  <title>UKM SAKTI | Klub Multimedia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
@@ -124,8 +125,8 @@
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url().'admin/robo'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Klub Robotik</span>
+          <a href="<?php echo base_url().'admin/youtube'?>">
+            <i class="fa fa-graduation-cap"></i> <span>Klub youtubetik</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
@@ -202,12 +203,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Gallery Photos
+        Data Youtube
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Photos</li>
+        <li class="active">Youtube</li>
       </ol>
     </section>
 
@@ -219,18 +220,16 @@
 
           <div class="box">
             <div class="box-header">
-              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Photo</a>
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add youtube</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-striped" style="font-size:13px;">
                 <thead>
                 <tr>
-          					<th>Gambar</th>
-          					<th>Judul</th>
-          					<th>Tanggal</th>
-          					<th>Album</th>
-          					<th>Author</th>
+          					<th>Photo</th>
+          					<th>Nama</th>
+                    <th>Deskripsi</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
@@ -239,24 +238,23 @@
           					$no=0;
           					foreach ($data->result_array() as $i) :
           					   $no++;
-          					   $galeri_id=$i['galeri_id'];
-          					   $galeri_judul=$i['galeri_judul'];
-          					   $galeri_tanggal=$i['tanggal'];
-          					   $galeri_author=$i['galeri_author'];
-          					   $galeri_gambar=$i['galeri_gambar'];
-          					   $galeri_album_id=$i['galeri_album_id'];
-                       $galeri_album_nama=$i['album_nama'];
+          					   $id=$i['k_youtube_id'];
+          					   $nama=$i['k_youtube_nama'];
+                       $desk=$i['k_youtube_deskripsi'];
+                       $photo=$i['k_youtube_photo'];
 
                     ?>
                 <tr>
-                  <td><img src="<?php echo base_url().'assets/images/'.$galeri_gambar;?>" style="width:80px;"></td>
-                  <td><?php echo $galeri_judul;?></td>
-        				  <td><?php echo $galeri_tanggal;?></td>
-        				  <td><?php echo $galeri_album_nama;?></td>
-                  <td><?php echo $galeri_author;?></td>
+                  <?php if(empty($photo)):?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
+                  <?php else:?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
+                  <?php endif;?>
+        				  <td><?php echo $nama;?></td>
+                  <td><?php echo $desk;?></td>
                   <td style="text-align:right;">
-                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $galeri_id;?>"><span class="fa fa-pencil"></span></a>
-                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $galeri_id;?>"><span class="fa fa-trash"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
                   </td>
                 </tr>
 				<?php endforeach;?>
@@ -274,7 +272,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
- <footer class="main-footer">
+<footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 1.0
     </div>
@@ -483,42 +481,30 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Add Photo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Add Link Youtube</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/galeri/simpan_galeri'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/simpan_youtube'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Judul</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xjudul" class="form-control" id="inputUserName" placeholder="Judul" required>
+                                            <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Album</label>
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
                                         <div class="col-sm-7">
-
-                                          <select class="form-control" name="xalbum" style="width: 100%;" required>
-                                                    <option value="">-Pilih-</option>
-                                              <?php
-                                              $no=0;
-                                              foreach ($alb->result_array() as $a) :
-                                                 $no++;
-                                                           $alb_id=$a['album_id'];
-                                                           $alb_nama=$a['album_nama'];
-
-                                                        ?>
-                                                    <option value="<?php echo $alb_id;?>"><?php echo $alb_nama;?></option>
-                                              <?php endforeach;?>
-                                          </select>
+                                            <!--<input type="text" name="xdesk" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
                                         <div class="col-sm-7">
-                                            <input type="file" name="filefoto" required/>
+                                            <input type="file" name="filefoto"/>
                                         </div>
                                     </div>
 
@@ -535,49 +521,37 @@
 
   <!--Modal Edit Album-->
   <?php foreach ($data->result_array() as $i) :
-              $galeri_id=$i['galeri_id'];
-              $galeri_judul=$i['galeri_judul'];
-              $galeri_tanggal=$i['tanggal'];
-              $galeri_author=$i['galeri_author'];
-              $galeri_gambar=$i['galeri_gambar'];
-              $galeri_album_id=$i['galeri_album_id'];
-              $galeri_album_nama=$i['album_nama'];
+              $id=$i['k_youtube_id'];
+              $nama=$i['k_youtube_nama'];
+              $desk=$i['k_youtube_deskripsi'];
+              $photo=$i['k_youtube_photo'];
             ?>
 
-        <div class="modal fade" id="ModalEdit<?php echo $galeri_id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Edit Photo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Link Youtube</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/galeri/update_galeri'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/update_youtube'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-                                <input type="hidden" name="kode" value="<?php echo $galeri_id;?>"/>
-                                <input type="hidden" value="<?php echo $galeri_gambar;?>" name="gambar">
-                                  <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Judul</label>
+                                <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                                <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                                    
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
                                         <div class="col-sm-7">
-                                            <input type="text" name="xjudul" class="form-control" value="<?php echo $galeri_judul;?>" id="inputUserName" placeholder="Judul" required>
+                                            <input type="text" name="xnama" value="<?php echo $nama;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="inputUserName" class="col-sm-4 control-label">Album</label>
-                                        <div class="col-sm-7">
 
-                                          <select class="form-control" name="xalbum" style="width: 100%;" required>
-                                                    <option value="">-Pilih-</option>
-                                              <?php
-                                              foreach ($alb->result_array() as $a) {
-                                                           $alb_id=$a['album_id'];
-                                                           $alb_nama=$a['album_nama'];
-                                                           if($galeri_album_id==$alb_id)
-                                                              echo "<option value='$alb_id' selected>$alb_nama</option>";
-                                                           else
-                                                              echo "<option value='$alb_id'>$alb_nama</option>";
-                                                        }?>
-                                          </select>
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" value="<?php echo $desk;?>" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required><?php echo $desk;?></textarea>
                                         </div>
                                     </div>
 
@@ -601,28 +575,24 @@
 	<!--Modal Edit Album-->
 
 	<?php foreach ($data->result_array() as $i) :
-              $galeri_id=$i['galeri_id'];
-              $galeri_judul=$i['galeri_judul'];
-              $galeri_tanggal=$i['tanggal'];
-              $galeri_author=$i['galeri_author'];
-              $galeri_gambar=$i['galeri_gambar'];
-              $galeri_album_id=$i['galeri_album_id'];
-              $galeri_album_nama=$i['album_nama'];
+              $id=$i['k_youtube_id'];
+              $nama=$i['k_youtube_nama'];
+              $desk=$i['k_youtube_deskripsi'];
+              $photo=$i['k_youtube_photo'];
             ?>
 	<!--Modal Hapus Pengguna-->
-        <div class="modal fade" id="ModalHapus<?php echo $galeri_id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="ModalHapus<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus Photo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Hapus Link Youtube</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/galeri/hapus_galeri'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/hapus_youtube'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-							       <input type="hidden" name="kode" value="<?php echo $galeri_id;?>"/>
-                     <input type="hidden" value="<?php echo $galeri_gambar;?>" name="gambar">
-                     <input type="hidden" value="<?php echo $galeri_album_id;?>" name="album">
-                            <p>Apakah Anda yakin mau menghapus Posting <b><?php echo $galeri_judul;?></b> ?</p>
+							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                     <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                            <p>Apakah Anda yakin mau menghapus Link Youtube <b><?php echo $nama;?></b> ?</p>
 
                     </div>
                     <div class="modal-footer">
@@ -685,7 +655,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Photo Berhasil disimpan ke database.",
+                    text: "Link Youtube Berhasil disimpan ke database.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
@@ -697,7 +667,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Info',
-                    text: "Photo berhasil di update",
+                    text: "Link Youtube berhasil di update",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
@@ -709,7 +679,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Photo Berhasil dihapus.",
+                    text: "Link Youtube Berhasil dihapus.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
