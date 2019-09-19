@@ -55,7 +55,7 @@
 
     <!-- /.social-auth-links -->
     <hr/>
-    <p><center>Copyright <?php echo date('Y');?> Peradi Palangka Raya <br/> All Right Reserved</center></p>
+    <p><center>Copyright <?php echo date('Y');?> UKM SAKTI Palangka Raya <br/> All Right Reserved</center></p>
   </div>
   <!-- /.login-box-body -->
 </div>

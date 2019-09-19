@@ -154,7 +154,7 @@
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
                     </a>
-                    <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
+                    <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
