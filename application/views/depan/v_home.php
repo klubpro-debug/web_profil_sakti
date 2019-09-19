@@ -326,7 +326,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="address">
-                        <h3>Hubungi Kami</h3>
+                        <h3>Hubungi Kami </h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
