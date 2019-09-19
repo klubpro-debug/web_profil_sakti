@@ -27,30 +27,24 @@
 <body>
   <!--============================= HEADER =============================-->
   <div class="header-topbar">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-6 col-sm-8 col-md-9">
-                  <div class="header-top_address">
-                      
-                      
-                     
-                  </div>
-                  <div class="header-top_login2">
-                     
-                  </div>
-              </div>
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="header-top_login mr-sm-3">
-                    
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
-    <div class="col-md-6">
-    <img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>">
-    </div>    
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2">
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8">
+				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
+                </div>
+				<div class="col-xs-2 col-sm-2 col-md-2">
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
+				</div>
+            </div>
+        </div>
+    </div>
+    <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
+    <div class="col-md-12">
+    </div> 
+ 
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
@@ -154,7 +148,7 @@
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
-                     <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
+                     <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -172,7 +166,7 @@
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
+                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
