@@ -97,7 +97,10 @@
                                     <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
-							                  </li>
+                               </li>
+                               <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>

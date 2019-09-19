@@ -139,6 +139,13 @@
               <small class="label pull-right"></small>
             </span>
           </a>
+        </li><li>
+          <a href="<?php echo base_url().'admin/youtube'?>">
+            <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
         </li>
         <!--
         <li class="treeview">
