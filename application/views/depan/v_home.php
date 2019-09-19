@@ -28,22 +28,29 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
+    <style>
+    .topbar1{
+        background-image: linear-gradient(yellow,green);
+	font-family: merriweather;
+    }
+
+    </style>
 
 </head>
 
 <body>
     <!--============================= HEADER =============================-->
-    <div class="header-topbar">
+    <div class="header-topbar topbar1">
         <div class="container">
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo upr.png'?>">				
                 </div>
                 <div class="col-xs-8 col-sm-8 col-md-8">
 				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
                 </div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/Logo Sakti.png'?>">				
 				</div>
             </div>
         </div>
