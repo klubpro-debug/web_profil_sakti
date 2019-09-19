@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-  
+
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
@@ -132,7 +132,7 @@
                                     <!-- // end .form-group -->
                                     <button type="submit" class="btn btn-default btn-submit">SUBMIT</button>
                                     <div><?php echo $this->session->flashdata('msg');?></div>
-                                    <!-- // end #js-contact-result -->
+                                    <!-- // end #js-contact-result2 -->
                                 </form>
                             </div>
                         </div>
