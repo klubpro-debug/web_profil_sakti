@@ -297,7 +297,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
                     <a href="<?php echo site_url();?>">
                         <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
-                     <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
+                     <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -315,7 +315,7 @@ melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melang
                 <div class="col-md-3">
                     <div class="address">
                         <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
+                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
