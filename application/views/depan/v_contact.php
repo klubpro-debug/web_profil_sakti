@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <!--============================= HEADER jhsuf=============================-->
+  <!--============================= HEADER =============================-->
     <div class="header-topbar">
         <div class="container">
             <div class="row">
