@@ -132,7 +132,7 @@
                                     <!-- // end .form-group -->
                                     <button type="submit" class="btn btn-default btn-submit">SUBMIT</button>
                                     <div><?php echo $this->session->flashdata('msg');?></div>
-                                    <!-- // end #js-contact-result -->
+                                    <!-- // end #js-contact-result2 -->
                                 </form>
                             </div>
                         </div>
