@@ -28,18 +28,6 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
-<<<<<<< HEAD
-    <style>
-    .topbar1{
-        background-image: linear-gradient(yellow,green);
-	font-family: merriweather;
-    }
-    footer{
-        background:green;
-    }
-    </style>
-=======
->>>>>>> parent of 57ffcaf... merubah warna header dan logo
 
 </head>
 
