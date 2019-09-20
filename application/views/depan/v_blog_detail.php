@@ -102,6 +102,9 @@
                                     <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                </li>
+                                <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
                              </ul>

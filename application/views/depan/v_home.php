@@ -28,22 +28,31 @@
             return implode(" ",array_splice($words,0,$word_limit));
         }
     ?>
+    <style>
+    .topbar1{
+        background-image: linear-gradient(yellow,green);
+	font-family: merriweather;
+    }
+    footer{
+        background:green;
+    }
+    </style>
 
 </head>
 
 <body>
     <!--============================= HEADER =============================-->
-    <div class="header-topbar">
+    <div class="header-topbar topbar1">
         <div class="container">
             <div class="row">
                 <div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo upr.png'?>">				
                 </div>
                 <div class="col-xs-8 col-sm-8 col-md-8">
 				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
                 </div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
+				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/Logo Sakti.png'?>">				
 				</div>
             </div>
         </div>
@@ -97,7 +106,10 @@
                                     <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
-							                  </li>
+                                              </li>
+                                              <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
                                 </li>
@@ -302,12 +314,12 @@
 <!--//END DETAILED CHART -->
 <!--============================= FOOTER =============================-->
 <footer>
-    <div class="container">
+    <div class="container con1">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 ">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
+                        <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
                      <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
@@ -326,7 +338,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="address">
-                        <h3>Hubungi Kami</h3>
+                        <h3>Hubungi Kami </h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
                                 <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>

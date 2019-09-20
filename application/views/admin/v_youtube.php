@@ -10,27 +10,25 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Inbox</title>
+  <title>UKM SAKTI | Klub Multimedia</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
+  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
+    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
   <!-- DataTables -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/daterangepicker/daterangepicker.css'?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/daterangepicker/daterangepicker.css'?>">
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/timepicker/bootstrap-timepicker.min.css'?>">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datepicker/datepicker3.css'?>">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+
+
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -127,7 +125,7 @@
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url().'admin/robo'?>">
+          <a href="<?php echo base_url().'admin/youtube'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Robotik</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
@@ -167,7 +165,7 @@
         </li>
   -->
 
-        <li class="active">
+        <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
             <span class="pull-right-container">
@@ -205,12 +203,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Inbox
+        Data Youtube
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Inbox</li>
+        <li class="active">Youtube</li>
       </ol>
     </section>
 
@@ -221,37 +219,42 @@
           <div class="box">
 
           <div class="box">
+            <div class="box-header">
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add youtube</a>
+            </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-striped" style="font-size:12px;">
+              <table id="example1" class="table table-striped" style="font-size:13px;">
                 <thead>
                 <tr>
-					          <th style="width:70px;">#Tanggal</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Pesan</th>
+          					<th>Photo</th>
+          					<th>Nama</th>
+                    <th>Deskripsi</th>
                     <th style="text-align:right;">Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
-				<?php
-					$no=0;
-  					foreach ($data->result_array() as $i) :
-  					   $no++;
-                       $inbox_id=$i['inbox_id'];
-                       $inbox_nama=$i['inbox_nama'];
-                       $inbox_email=$i['inbox_email'];
-                       $inbox_msg=$i['inbox_pesan'];
-                       $tanggal=$i['tanggal'];
+          				<?php
+          					$no=0;
+          					foreach ($data->result_array() as $i) :
+          					   $no++;
+          					   $id=$i['k_youtube_id'];
+          					   $nama=$i['k_youtube_nama'];
+                       $desk=$i['k_youtube_deskripsi'];
+                       $photo=$i['k_youtube_photo'];
 
                     ?>
                 <tr>
-                  <td><?php echo $tanggal;?></td>
-                  <td><?php echo $inbox_nama;?></td>
-                  <td><?php echo $inbox_email;?></td>
-                  <td><?php echo $inbox_msg;?></td>
+                  <?php if(empty($photo)):?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/user_blank.png';?>"></td>
+                  <?php else:?>
+                  <td><img width="40" height="40" class="img-circle" src="<?php echo base_url().'assets/images/'.$photo;?>"></td>
+                  <?php endif;?>
+        				  <td><?php echo $nama;?></td>
+                  <td><?php echo $desk;?></td>
                   <td style="text-align:right;">
-                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $inbox_id;?>"><span class="fa fa-trash"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalEdit<?php echo $id;?>"><span class="fa fa-pencil"></span></a>
+                        <a class="btn" data-toggle="modal" data-target="#ModalHapus<?php echo $id;?>"><span class="fa fa-trash"></span></a>
                   </td>
                 </tr>
 				<?php endforeach;?>
@@ -472,77 +475,39 @@
 </div>
 <!-- ./wrapper -->
 
-<!--Modal Add Pengguna-->
+    <!--Modal Add Pengguna-->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Add Agenda</h4>
+                        <h4 class="modal-title" id="myModalLabel">Add Link Youtube</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/agenda/simpan_agenda'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/simpan_youtube'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 
-                            <div class="form-group">
-                                <label for="inputUserName" class="col-sm-4 control-label">Nama Agenda</label>
-                                <div class="col-sm-7">
-                                  <input type="text" name="xnama_agenda" class="form-control" id="inputUserName" placeholder="Nama Agenda" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputUserName" class="col-sm-4 control-label">Deskripsi</label>
-                                <div class="col-sm-7">
-                                  <textarea class="form-control" rows="3" name="xdeskripsi" placeholder="Deskripsi ..." required></textarea>
-                                </div>
-                            </div>
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xnama" class="form-control" id="inputUserName" placeholder="Nama" required>
+                                        </div>
+                                    </div>
 
-                            <div class="form-group">
-                              <label for="inputUserName" class="col-sm-4 control-label">Mulai</label>
-                              <div class="col-sm-7">
-                                <div class="input-group date">
-                                  <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                  </div>
-                                  <input type="text" name="xmulai" class="form-control pull-right" id="datepicker" required>
-                                </div>
-                              </div>
-                              <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required></textarea>
+                                        </div>
+                                    </div>
 
-                            <!-- Date range -->
-                            <div class="form-group">
-                             <label for="inputUserName" class="col-sm-4 control-label">Selesai</label>
-                              <div class="col-sm-7">
-                                <div class="input-group date">
-                                  <div class="input-group-addon">
-                                    <i class="fa fa-calendar"></i>
-                                  </div>
-                                  <input type="text" name="xselesai" class="form-control pull-right" id="datepicker2" required>
-                                </div>
-                              </div>
-                              <!-- /.input group -->
-                            </div>
-                            <!-- /.form group -->
-                            <div class="form-group">
-                                <label for="inputUserName" class="col-sm-4 control-label">Tempat</label>
-                                <div class="col-sm-7">
-                                  <input type="text" name="xtempat" class="form-control" id="inputUserName" placeholder="Tempat" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputUserName" class="col-sm-4 control-label">Waktu</label>
-                                <div class="col-sm-7">
-                                    <input type="text" name="xwaktu" class="form-control" id="inputUserName" placeholder="Contoh: 10.30-11.00 WIB" required>
-                                </div>
-                            </div>
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
+                                        <div class="col-sm-7">
+                                            <input type="file" name="filefoto"/>
+                                        </div>
+                                    </div>
 
-                            <div class="form-group">
-                                <label for="inputUserName" class="col-sm-4 control-label">Keterangan</label>
-                                <div class="col-sm-7">
-                                  <textarea class="form-control" name="xketerangan" rows="2" placeholder="Keterangan ..."></textarea>
-                                </div>
-                            </div>
 
                     </div>
                     <div class="modal-footer">
@@ -554,27 +519,80 @@
             </div>
         </div>
 
-
-
-	<?php foreach ($data->result_array() as $i) :
-              $inbox_id=$i['inbox_id'];
-              $inbox_nama=$i['inbox_nama'];
-              $inbox_email=$i['inbox_email'];
-              $inbox_msg=$i['inbox_pesan'];
-              $tanggal=$i['tanggal'];
+  <!--Modal Edit Album-->
+  <?php foreach ($data->result_array() as $i) :
+              $id=$i['k_youtube_id'];
+              $nama=$i['k_youtube_nama'];
+              $desk=$i['k_youtube_deskripsi'];
+              $photo=$i['k_youtube_photo'];
             ?>
-	<!--Modal Hapus Pengguna-->
-        <div class="modal fade" id="ModalHapus<?php echo $inbox_id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal fade" id="ModalEdit<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus Agenda</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Link Youtube</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/inbox/hapus_inbox'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/update_youtube'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
-							       <input type="hidden" name="kode" value="<?php echo $inbox_id;?>"/>
-                            <p>Apakah Anda yakin mau menghapus data ini?</p>
+                                <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                                <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                                    
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Nama</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" name="xnama" value="<?php echo $nama;?>" class="form-control" id="inputUserName" placeholder="Nama" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Deskripsi Klub</label>
+                                        <div class="col-sm-7">
+                                            <!--<input type="text" name="xdesk" value="<?php echo $desk;?>" class="form-control" id="inputUserName" placeholder="Contoh: Perdata, Pidana" required>-->
+                                            <textarea class="form-control" rows="3" name="xdesk" id="inputUserName" placeholder="Deskripsi ..." required><?php echo $desk;?></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
+                                        <div class="col-sm-7">
+                                            <input type="file" name="filefoto"/>
+                                        </div>
+                                    </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Simpan</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+  <?php endforeach;?>
+	<!--Modal Edit Album-->
+
+	<?php foreach ($data->result_array() as $i) :
+              $id=$i['k_youtube_id'];
+              $nama=$i['k_youtube_nama'];
+              $desk=$i['k_youtube_deskripsi'];
+              $photo=$i['k_youtube_photo'];
+            ?>
+	<!--Modal Hapus Pengguna-->
+        <div class="modal fade" id="ModalHapus<?php echo $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
+                        <h4 class="modal-title" id="myModalLabel">Hapus Link Youtube</h4>
+                    </div>
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/youtube/hapus_youtube'?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
+                     <input type="hidden" value="<?php echo $photo;?>" name="gambar">
+                            <p>Apakah Anda yakin mau menghapus Link Youtube <b><?php echo $nama;?></b> ?</p>
 
                     </div>
                     <div class="modal-footer">
@@ -599,9 +617,6 @@
 <script src="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.min.js'?>"></script>
 <!-- SlimScroll -->
 <script src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/datepicker/bootstrap-datepicker.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/timepicker/bootstrap-timepicker.min.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/daterangepicker/daterangepicker.js'?>"></script>
 <!-- FastClick -->
 <script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
 <!-- AdminLTE App -->
@@ -621,27 +636,6 @@
       "info": true,
       "autoWidth": false
     });
-
-    $('#datepicker').datepicker({
-      autoclose: true,
-      format: 'yyyy-mm-dd'
-    });
-    $('#datepicker2').datepicker({
-      autoclose: true,
-      format: 'yyyy-mm-dd'
-    });
-    $('.datepicker3').datepicker({
-      autoclose: true,
-      format: 'yyyy-mm-dd'
-    });
-    $('.datepicker4').datepicker({
-      autoclose: true,
-      format: 'yyyy-mm-dd'
-    });
-    $(".timepicker").timepicker({
-      showInputs: true
-    });
-
   });
 </script>
 <?php if($this->session->flashdata('msg')=='error'):?>
@@ -657,11 +651,23 @@
                 });
         </script>
 
+    <?php elseif($this->session->flashdata('msg')=='success'):?>
+        <script type="text/javascript">
+                $.toast({
+                    heading: 'Success',
+                    text: "Link Youtube Berhasil disimpan ke database.",
+                    showHideTransition: 'slide',
+                    icon: 'success',
+                    hideAfter: false,
+                    position: 'bottom-right',
+                    bgColor: '#7EC857'
+                });
+        </script>
     <?php elseif($this->session->flashdata('msg')=='info'):?>
         <script type="text/javascript">
                 $.toast({
                     heading: 'Info',
-                    text: "Agenda berhasil di update",
+                    text: "Link Youtube berhasil di update",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
@@ -673,7 +679,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "Pesan Berhasil dihapus.",
+                    text: "Link Youtube Berhasil dihapus.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
