@@ -33,7 +33,7 @@
 
 <body>
     <!--============================= HEADER =============================-->
-    <div class="header-topbar topbar1">
+    <div class="header-topbar">
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-sm-8 col-md-9">
@@ -338,8 +338,7 @@
                 </div>
             </div>
         </footer>
-        <!--//END FOOTER  -->
-
+        <!--//END FOOTER -->
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
         <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
