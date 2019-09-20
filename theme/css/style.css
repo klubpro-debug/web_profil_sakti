@@ -1031,8 +1031,8 @@ a {
    FOOTER
    ============================================================== */
 footer {
-  background: #08468e;
-  padding: 60px 0 100px; }
+  background:black;
+  padding: 60px 0 30px; }
 
 .subscribe {
   border-bottom: 1px solid #3f3f3f; }
@@ -2938,7 +2938,7 @@ div.panel {
   margin: 0 0 24px; }
 
 .contact-form {
-  background: #cbb58b;
+  background:rgb(200, 206, 201);
   position: relative;
   z-index: 2; }
   .contact-form h3 {
@@ -2987,13 +2987,13 @@ div.panel {
   padding: 0 30px 0 30px; }
 
 .contact-center {
-  background: #ad9566;
+  background: #423f38;
   border-radius: 50%;
   text-align: center;
   width: 44px;
   height: 44px;
   padding: 10px 0;
-  color: #fff;
+  color: rgb(241, 234, 234);
   margin: 0 auto;
   top: -17em;
   position: relative;
@@ -3529,7 +3529,7 @@ div.panel {
 
 .header-topbar {
   padding: 10px;
-  background: #08468e; }
+  background:black; }
 
 .header-top_address {
   color: #d8d8d8;
