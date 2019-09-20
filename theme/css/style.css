@@ -1031,7 +1031,7 @@ a {
    FOOTER
    ============================================================== */
 footer {
-  background: #08468e;
+  background:black;
   padding: 60px 0 100px; }
 
 .subscribe {
@@ -3529,7 +3529,7 @@ div.panel {
 
 .header-topbar {
   padding: 10px;
-  background: #08468e; }
+  background:black; }
 
 .header-top_address {
   color: #d8d8d8;
