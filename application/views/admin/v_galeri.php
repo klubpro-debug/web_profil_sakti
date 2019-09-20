@@ -8,24 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Gallery</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+<?php $this->load->view("partials_admin/head.php") ?>
 
 
 
@@ -274,12 +257,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
- <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2018 UKM SAKTI PALANGKA RAYA</a>.</strong> All rights reserved.
-  </footer>
+  <?php $this->load->view("partials_admin/footer.php") ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

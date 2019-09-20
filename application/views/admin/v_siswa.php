@@ -256,12 +256,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
- <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2018 PERADI PALANGKA RAYA</a>.</strong> All rights reserved.
-  </footer>
+  <?php $this->load->view("partials_admin/footer.php") ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
