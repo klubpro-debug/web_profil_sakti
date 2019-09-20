@@ -1,5 +1,5 @@
 <!-- Required meta tags -->
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo SITE_NAME .": ". ucfirst($this->uri->segment(1))?></title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
@@ -18,9 +18,17 @@
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/owl.carousel.min.css'?>">
     <!-- Main CSS -->
     <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
-    <?php
-        function limit_words($string, $word_limit){
-            $words = explode(" ",$string);
-            return implode(" ",array_splice($words,0,$word_limit));
-        }
-    ?>
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="<?php echo base_url().'theme/css/magnific-popup.css'?>">
+    <!-- Image Hover CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'theme/css/normalize.css'?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'theme/css/set2.css'?>" />
+
+    <!--Social Share-->
+    <link href="<?php echo base_url().'theme/css/jssocials.css'?>" rel="stylesheet">
+    <link href="<?php echo base_url().'theme/css/jssocials-theme-flat.css'?>" rel="stylesheet">
+
+    <!-- Masonry Gallery -->
+    <link href="<?php echo base_url().'theme/css/animated-masonry-gallery.css'?>" rel="stylesheet" type="text/css" />
+    <!-- Main CSS -->
+    <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
