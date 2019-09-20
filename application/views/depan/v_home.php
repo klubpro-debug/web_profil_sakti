@@ -350,7 +350,7 @@
                 </div>
             </div>
         </footer>
-        <!--//END FOOTER  -->
+        <!--//END FOOTER -->
 
         <!-- jQuery, Bootstrap JS. -->
         <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
