@@ -27,15 +27,12 @@
     <div class="header-topbar">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-upr.png'?>">				
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8">
-				<h2 align="center">SARANA KREATIFITAS TEKNOLOGI INFORMASI</h2>
-                </div>
-				<div class="col-xs-2 col-sm-2 col-md-2">
-				<img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/ukm-sakti.jpg'?>">				
-				</div>
+            <div class="col-xs-6 col-sm-8 col-md-9">
+                    
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    
+                    </div>
             </div>
         </div>
     </div>
@@ -114,30 +111,11 @@
                 <div class="contact-form">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
-                            <div class="contact-option_rsp">
-                                <h3>Tinggalkan Pesan</h3>
-                                <form action="<?php echo site_url('contact/kirim_pesan');?>" method="post">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" name="xnama" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" name="xemail" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone" name="xphone" required>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <div class="form-group">
-                                        <textarea placeholder="Message" class="form-control" name="xmessage" required rows="5"></textarea>
-                                    </div>
-                                    <!-- // end .form-group -->
-                                    <button type="submit" class="btn btn-default btn-submit">SUBMIT</button>
-                                    <div><?php echo $this->session->flashdata('msg');?></div>
-                                    <!-- // end #js-contact-result2 -->
-                                </form>
-                            </div>
+						<h3>Email : jsfjsfb@jdf</h3>
+
+
+
+
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="contact-address">
@@ -173,7 +151,7 @@
             <div class="col-md-3">
                 <div class="foot-logo">
                     <a href="<?php echo site_url();?>">
-                        <img src="<?php echo base_url().'theme/images/logo-upr.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
+                    <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
                     </a>
                      <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
                     </div>
