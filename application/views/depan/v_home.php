@@ -123,12 +123,11 @@
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/m.jpg'?>" alt="First slide">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Cecil B. DeMille</h1>
-										<h4>Prinsip merupakan hukum alam yang tidak dapat dilanggar. Kita tidak mungkin
-			melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melanggar hukum-hukum itu.</h4>
+										<h1>Multimedia</h1>
+										<h4>Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan. Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
 										</div>
@@ -136,11 +135,11 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/r.jpg'?>" alt="Second slide">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Thomas Malthus</h1>
-										<h4>Telah tampak bahwa dari hukum-hukum alam kita yang tak terelakkan, beberapa manusia harus menderita karena kekurangan. Ini adalah orang-orang yang tidak bahagia yang, dalam undian besar kehidupan, telah melukis sesuatu yang kosong.</h4>
+										<h1>Robotik</h1>
+										<h4>Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('advokat');?>" class="btn btn-default">Learn more</a>
 										</div>
@@ -148,11 +147,11 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/p.jpg'?>" alt="Third slide">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Max Planck</h1>
-										<h4>Kita tidak punya hak untuk berasumsi bahwa setiap hukum-hukum fisika yang ada, atau jika mereka telah ada sampai sekarang, bahwa mereka akan terus ada dengan cara yang sama di masa depan.</h4>
+										<h1>Programming</h1>
+										<h4>Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
 										</div>
