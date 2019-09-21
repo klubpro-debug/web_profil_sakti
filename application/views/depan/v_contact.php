@@ -112,10 +112,6 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
 						<h3>Email : jsfjsfb@jdf</h3>
-
-
-
-
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="contact-address">
@@ -143,6 +139,25 @@
             </div>
         </div>
     </section>
+    
+    <!--============================= Lokasi =============================-->
+    <section class="contact">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-12">
+                <div class="contact-title">
+                    <h2>Lokasi UKM SAKTI</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8393980353435!2d113.89898961433013!3d-2.214160737965559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb3061b73b83d%3A0x1f74adab03916a71!2sJl.%20Hendrik%20Timang%2C%20Palangka%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah%2074874!5e0!3m2!1sid!2sid!4v1569046814237!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:2;" allowfullscreen=""></iframe>
+            </center>
+        </div>
+    </div>
+    </div>
+        </section>
     <!--//END  ABOUT IMAGE -->
     <!--============================= FOOTER =============================-->
     <footer>
