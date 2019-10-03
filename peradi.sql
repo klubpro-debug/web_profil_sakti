@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 03 Okt 2019 pada 18.36
+-- Waktu pembuatan: 03 Okt 2019 pada 20.36
 -- Versi Server: 5.5.32
 -- Versi PHP: 5.4.19
 
@@ -218,6 +218,27 @@ CREATE TABLE IF NOT EXISTS `tbl_komentar` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `tbl_k_mulmed`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_k_mulmed` (
+  `k_mulmed_id` int(11) NOT NULL AUTO_INCREMENT,
+  `k_mulmed_nama` varchar(70) DEFAULT NULL,
+  `k_mulmed_deskripsi` text,
+  `k_mulmed_photo` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`k_mulmed_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data untuk tabel `tbl_k_mulmed`
+--
+
+INSERT INTO `tbl_k_mulmed` (`k_mulmed_id`, `k_mulmed_nama`, `k_mulmed_deskripsi`, `k_mulmed_photo`) VALUES
+(11, 'Klub Multimedia', 'Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu  (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan.  Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game.', '3f2d482e9fd13e4148598d73bca0d36b.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `tbl_k_program`
 --
 
@@ -328,7 +349,7 @@ CREATE TABLE IF NOT EXISTS `tbl_pengguna` (
 --
 
 INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_facebook`, `pengguna_twitter`, `pengguna_linkdin`, `pengguna_google_plus`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
-(1, 'Ade Chandra Saputra', 'Just do it', 'L', 'admin', '87ef5d1c19b0c050aff89f1221ae1671', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-03 06:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg'),
+(1, 'Ade Chandra Saputra', 'Just do it', 'L', 'admin', 'admin', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-03 06:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg'),
 (5, 'agus', NULL, 'L', 'agus', '04ad5266b790dc6d3c641bb45dbd6d96', NULL, 'agus@agus.com', '2312', NULL, NULL, NULL, NULL, 1, '1', '2018-11-01 14:53:20', 'b972270b7353f8acb45c8b9a9fc06dcf.png'),
 (9, 'Ade Chandra Saputra', 'Just do it', 'L', 'admin', '541ce7de15a7d7cd0e5e8161165254af', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-02 23:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg');
 
@@ -366,7 +387,7 @@ CREATE TABLE IF NOT EXISTS `tbl_pengunjung` (
   `pengunjung_ip` varchar(40) DEFAULT NULL,
   `pengunjung_perangkat` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`pengunjung_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=945 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=946 ;
 
 --
 -- Dumping data untuk tabel `tbl_pengunjung`
@@ -1317,7 +1338,8 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (941, '2019-09-19 18:17:05', '::1', 'Chrome'),
 (942, '2019-09-21 01:55:52', '::1', 'Chrome'),
 (943, '2019-09-21 01:55:52', '127.0.0.1', 'Chrome'),
-(944, '2019-10-03 10:46:00', '::1', 'Chrome');
+(944, '2019-10-03 10:46:00', '::1', 'Chrome'),
+(945, '2019-10-03 17:42:26', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
