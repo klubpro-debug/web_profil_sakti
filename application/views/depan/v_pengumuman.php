@@ -82,7 +82,7 @@
 								                <a class="nav-link" href="#">Klub</a>
 								                <ul class="dropdown-menu">
 									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                               </li>

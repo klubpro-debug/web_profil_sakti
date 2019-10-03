@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Klub Robotik</title>
+    <title>Klub Robotika</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
@@ -82,7 +82,7 @@
 								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
 									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                 </li>

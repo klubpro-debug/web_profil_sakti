@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 03 Okt 2019 pada 17.01
+-- Waktu pembuatan: 03 Okt 2019 pada 18.36
 -- Versi Server: 5.5.32
 -- Versi PHP: 5.4.19
 
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `tbl_advokat` (
 --
 
 INSERT INTO `tbl_advokat` (`advokat_id`, `advokat_nip`, `advokat_nama`, `advokat_jenkel`, `advokat_tmp_lahir`, `advokat_tgl_lahir`, `advokat_ahli`, `advokat_photo`, `advokat_tgl_input`) VALUES
-(9, '12354', 'Klub Multimedia', 'L', 'Palangka Raya', '25 Agustus 1975', 'Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu  (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan.  Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game', '4f97e4ae52d0e15c58bbb05fb686fd00.png', '2018-11-01 15:30:08');
+(9, '12354', 'Klub Multimedia', 'L', 'Palangka Raya', '25 Agustus 1975', 'Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu  (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan.  Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game', '3f2d482e9fd13e4148598d73bca0d36b.jpg', '2018-11-01 15:30:08');
 
 -- --------------------------------------------------------
 
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `tbl_album` (
 --
 
 INSERT INTO `tbl_album` (`album_id`, `album_nama`, `album_tanggal`, `album_pengguna_id`, `album_author`, `album_count`, `album_cover`) VALUES
-(1, 'Logo Sakti', '2019-09-17 17:02:20', 1, 'Ade Chandra Saputra', -5, 'b520cba6833a9d292009d77df900a7c5.jpg');
+(1, 'Logo Sakti', '2019-09-17 17:02:20', 1, 'Ade Chandra Saputra', 1, 'b520cba6833a9d292009d77df900a7c5.jpg');
 
 -- --------------------------------------------------------
 
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS `tbl_galeri` (
   PRIMARY KEY (`galeri_id`),
   KEY `galeri_album_id` (`galeri_album_id`),
   KEY `galeri_pengguna_id` (`galeri_pengguna_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data untuk tabel `tbl_galeri`
@@ -151,7 +151,13 @@ INSERT INTO `tbl_galeri` (`galeri_id`, `galeri_judul`, `galeri_tanggal`, `galeri
 (16, 'Belajar komputer programming', '2017-01-24 01:32:44', '41f46be181f2f8452c2041b5e79a05a5.jpg', 4, 1, 'M Fikri Setiadi'),
 (17, 'Belajar sambil bermain', '2017-01-24 01:33:08', '2858b0555c252690e293d29b922ba8e6.jpg', 4, 1, 'M Fikri Setiadi'),
 (18, 'Makan bersama', '2017-01-24 01:33:24', '90d67328e33a31d3f5eecd7dcb25b55d.jpg', 4, 1, 'M Fikri Setiadi'),
-(19, 'Logo Sakti', '2019-09-17 17:04:27', '0b53d856dc4fe12c94dca8bc8bca2602.jpg', 1, 1, 'Ade Chandra Saputra');
+(19, 'Logo Sakti', '2019-09-17 17:04:27', '0b53d856dc4fe12c94dca8bc8bca2602.jpg', 1, 1, 'Ade Chandra Saputra'),
+(20, 'UKM SAKTI', '2019-10-03 15:41:56', '152a37505da476803e761e5c533ce636.jpg', 1, 1, 'Ade Chandra Saputra'),
+(21, 'Bengkel Robot Sakti', '2019-10-03 15:42:21', 'f59aa4fc2b5772b839d0a4341c91518e.jpg', 1, 1, 'Ade Chandra Saputra'),
+(22, 'Ikon Sakti', '2019-10-03 15:42:37', '25a9844d4f0ae1f4db581e609a8f635a.jpg', 1, 1, 'Ade Chandra Saputra'),
+(23, 'Robot Sakti', '2019-10-03 15:43:13', '8b4dc3381254c2a0b6ae0bd9d64454f0.jpg', 1, 1, 'Ade Chandra Saputra'),
+(24, 'Rapat Sakti', '2019-10-03 15:43:27', '06448f16eefcb922886606a5afae4a13.jpg', 1, 1, 'Ade Chandra Saputra'),
+(26, 'Multimedia', '2019-10-03 16:28:58', '8d5c5949bd31bff37929ba10f8124bcd.jpg', 1, 1, 'Ade Chandra Saputra');
 
 -- --------------------------------------------------------
 
@@ -228,7 +234,7 @@ CREATE TABLE IF NOT EXISTS `tbl_k_program` (
 --
 
 INSERT INTO `tbl_k_program` (`k_program_id`, `k_program_nama`, `k_program_deskripsi`, `k_program_photo`) VALUES
-(10, 'Klub Programming', 'Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.', '25bc41953ccdcf3eec1340677b347ff0.png');
+(10, 'Klub Programming', 'Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.', '62976c3a03ced40338e2d65b298b072f.jpg');
 
 -- --------------------------------------------------------
 
@@ -249,7 +255,7 @@ CREATE TABLE IF NOT EXISTS `tbl_k_robo` (
 --
 
 INSERT INTO `tbl_k_robo` (`k_robo_id`, `k_robo_nama`, `k_robo_deskripsi`, `k_robo_photo`) VALUES
-(10, 'Klub Robotik', 'Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.', '710a53eaa80f2f19d4480872d19ca61d.jpg');
+(10, 'Klub Robotika', 'Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.', '7c329433fbdcb0c9a7b96a8a70fd5a46.jpg');
 
 -- --------------------------------------------------------
 
@@ -263,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `tbl_k_youtube` (
   `k_youtube_deskripsi` text,
   `k_youtube_photo` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`k_youtube_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data untuk tabel `tbl_k_youtube`
