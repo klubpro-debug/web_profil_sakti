@@ -114,9 +114,9 @@
 	  
 <!--============================= carousel =============================-->
 <section>
-	<div class="container" >
+	<div class="container" align = "center">
 		<div class ="row">
-			<div class="col-md-8">
+			<div class="col-md-12">
 				<div class="slider_img layout_two">
 					<div id="carousel" class="carousel slide" data-ride="carousel" >
 						<ol class="carousel-indicators">

@@ -24,10 +24,10 @@
 
 <body>
   <!--============================= HEADER =============================-->
-    <div class="header-topbar">
+  <div class="header-topbar">
         <div class="container">
             <div class="row">
-            <div class="col-xs-6 col-sm-8 col-md-9">
+                    <div class="col-xs-6 col-sm-8 col-md-9">
                     
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3">
@@ -36,7 +36,10 @@
             </div>
         </div>
     </div>
-
+    <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
+    <div class="col-md-12">
+    </div> 
+     
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
