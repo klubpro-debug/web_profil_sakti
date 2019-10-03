@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Berita Terbaru</title>
+    <title>Klub Multimedia</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
@@ -17,15 +17,11 @@
     <!-- Simple Line Font -->
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/simple-line-icons.css'?>">
     <!-- Owl Carousel -->
+    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick.css'?>">
+    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick-theme.css'?>">
     <link rel="stylesheet" href="<?php echo base_url().'theme/css/owl.carousel.min.css'?>">
     <!-- Main CSS -->
     <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
-    <?php
-        function limit_words($string, $word_limit){
-            $words = explode(" ",$string);
-            return implode(" ",array_splice($words,0,$word_limit));
-        }
-    ?>
 </head>
 
 <body>
@@ -33,7 +29,7 @@
   <div class="header-topbar">
         <div class="container">
             <div class="row">
-                 <div class="col-xs-6 col-sm-8 col-md-9">
+                     <div class="col-xs-6 col-sm-8 col-md-9">
                     
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3">
@@ -45,8 +41,7 @@
     <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
     <div class="col-md-12">
     </div> 
-  
-    
+ 
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
@@ -107,68 +102,45 @@
     <section>
 </section>
 <!--//END HEADER -->
-<!--============================= BLOG =============================-->
-<section class="blog-wrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-              <?php echo $this->session->flashdata('msg');?>
-              <?php foreach ($data->result() as $row) : ?>
-                <div class="blog-single-item">
-                    <div class="blog-img_block">
-                        <img src="<?php echo base_url().'assets/images/'.$row->tulisan_gambar;?>" class="img-fluid" alt="blog-img">
-                        <div class="blog-date">
-                            <span><?php echo $row->tanggal;?></span>
-                        </div>
-                    </div>
-                    <div class="blog-tiltle_block">
-                        <h4><a href="<?php echo site_url('artikel/'.$row->tulisan_slug);?>"><?php echo $row->tulisan_judul;?></a></h4>
-                        <h6> <a href="#"><i class="fa fa-user" aria-hidden="true"></i><span><?php echo $row->tulisan_author;?></span> </a>  |   <a href="#"><i class="fa fa-tags" aria-hidden="true"></i><span><?php echo $row->tulisan_kategori_nama;?></span></a></h6>
-                        <?php echo limit_words($row->tulisan_isi,10).'...';?>
-                        <div class="blog-icons">
-                            <div class="blog-share_block">
-                                <a href="<?php echo site_url('artikel/'.$row->tulisan_slug);?>">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              <?php endforeach;?>
-                <nav>
-                    <?php error_reporting(0); echo $page;?>
-                </nav>
-            </div>
-            <div class="col-md-4">
-                <form action="<?php echo site_url('blog/search');?>" method="get">
-                    <input type="text" name="keyword" placeholder="Search" class="blog-search" required>
-                    <button type="submit" class="btn btn-warning btn-blogsearch">SEARCH</button>
-                </form>
-                <div class="blog-category_block">
-                  <h3>Kategori</h3>
-                  <ul>
-                    <?php foreach ($category->result() as $row) : ?>
-                      <li><a href="<?php echo site_url('blog/kategori/'.str_replace(" ","-",$row->kategori_nama));?>"><?php echo $row->kategori_nama;?><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-                    <?php endforeach;?>
-                  </ul>
-                </div>
-                <div class="blog-featured_post">
-                    <h3>Populer</h3>
-                    <?php foreach ($populer->result() as $row) :?>
-                      <div class="blog-featured-img_block">
-                          <img width="35%" src="<?php echo base_url().'assets/images/'.$row->tulisan_gambar;?>" class="img-fluid" alt="blog-featured-img">
-                          <h5><a href="<?php echo site_url('artikel/'.$row->tulisan_slug);?>"><?php echo limit_words($row->tulisan_judul,3).'...';?></a></h5>
-                          <p><?php echo limit_words($row->tulisan_isi,5).'...';?></p>
-                      </div>
-                      <hr>
-                    <?php endforeach;?>
-                </div>
 
+    <section class="our-teachers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mb-5">Keterangan Klub</h2>
+                </div>
             </div>
+            <div class="row">
+                <?php foreach ($data->result() as $row) : ?>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="admission_insruction">
+                          <?php if(empty($row->k_mulmed_photo)):?>
+                            <img src="<?php echo base_url().'assets/images/blank.png';?>" class="img-fluid" alt="#">
+                          <?php else:?>
+                            <img src="<?php echo base_url().'assets/images/'.$row->k_mulmed_photo;?>" class="img-fluid" alt="#">
+                          <?php endif;?>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-9">
+                    <p class="mt-3"><span><?php echo $row->k_mulmed_nama;?></span>
+                                <br>
+                    <div class="col-md-10">
+                    <?php echo $row->k_mulmed_deskripsi;?></p>
+                    </div>
+                                
+                    </div>
+                   
+                <?php endforeach;?>
+              </div>
+            <!-- End row -->
+            <nav><?php echo $page;?></nav>
         </div>
-    </div>
-</section>
-<!--//END BLOG -->
-<!--============================= FOOTER =============================-->
-<footer>
+    </section>
+
+    <!--//End Style 2 -->
+    <!--============================= FOOTER =============================-->
+    <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -205,19 +177,22 @@
                 </div>
             </div>
         </footer>
-        <!--//END FOOTER -->
-        <!-- jQuery, Bootstrap JS. -->
-        <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
-        <!-- Plugins -->
-        <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
-        <!-- Subscribe -->
-        <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
-        <!-- Script JS -->
-        <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
-    </body>
+            <!--//END FOOTER -->
+            <!-- jQuery, Bootstrap JS. -->
+    <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
+    <!-- Plugins -->
+    <script src="<?php echo base_url().'theme/js/slick.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/counterup.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
+    <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
+    <!-- Subscribe -->
+    <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
+    <!-- Script JS -->
+    <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
+</body>
 
-    </html>
+</html>

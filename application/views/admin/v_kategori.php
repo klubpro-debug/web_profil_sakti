@@ -97,7 +97,7 @@
         </li>
 
         <li>
-          <a href="<?php echo base_url().'admin/advokat'?>">
+          <a href="<?php echo base_url().'admin/mulmed'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>

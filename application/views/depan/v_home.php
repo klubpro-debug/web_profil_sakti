@@ -91,7 +91,7 @@
                                 <li class="dropdown">
 								                <a class="nav-link" href="#">Klub</a>
                                                 <ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
+									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
                                     <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
@@ -127,38 +127,38 @@
 						
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="<?php echo base_url().'theme/images/m.jpg'?>" alt="First slide" width="800px" height="700" >
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubmulmed.jpg'?>" alt="First slide" width="800px" height="700" >
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Multimedia</h1>
+										<!--<h1>Multimedia</h1>
 										<h4>Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan. Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/r.jpg'?>" alt="Second slide"width="700px" height="700">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubrobo.jpg'?>" alt="Second slide"width="700px" height="700">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Robotik</h1>
+										<!--<h1>Robotik</h1>
 										<h4>Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.</h4>
-										<div class="slider-btn">
-											<a href="<?php echo site_url('advokat');?>" class="btn btn-default">Learn more</a>
-										</div>
+                                         <div class="slider-btn">
+											<a href="<?php echo site_url('mulmed');?>" class="btn btn-default">Learn more</a>
+										</div>-->
 									</div>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/p.jpg'?>" alt="Third slide"width="700px" height="700">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubprogram.jpg'?>" alt="Third slide"width="700px" height="700">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Programming</h1>
+										<!--<h1>Programming</h1>
 										<h4>Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
@@ -323,7 +323,7 @@
                             <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
                             <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                             <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>
