@@ -80,7 +80,7 @@
 								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
 									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                 </li>
@@ -161,8 +161,8 @@
         </div>
         <div class="col-md-12">
             <center>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8393980353435!2d113.89898961433013!3d-2.214160737965559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb3061b73b83d%3A0x1f74adab03916a71!2sJl.%20Hendrik%20Timang%2C%20Palangka%2C%20Kec.%20Jekan%20Raya%2C%20Kota%20Palangka%20Raya%2C%20Kalimantan%20Tengah%2074874!5e0!3m2!1sid!2sid!4v1569046814237!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:2;" allowfullscreen=""></iframe>
-            </center>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=18vV4kJPulcETR8m0dbvjcCAX2pgRm0GK" width="640" height="480"></iframe>
+        </center>
         </div>
     </div>
     </div>
