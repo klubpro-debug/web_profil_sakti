@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 21 Sep 2019 pada 04.09
+-- Waktu pembuatan: 03 Okt 2019 pada 17.01
 -- Versi Server: 5.5.32
 -- Versi PHP: 5.4.19
 
@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `tbl_kategori` (
 --
 
 INSERT INTO `tbl_kategori` (`kategori_id`, `kategori_nama`, `kategori_tanggal`) VALUES
-(14, 'Artikel Hukum', '2018-11-01 14:38:16');
+(14, 'Artikel TI', '2018-11-01 14:38:16');
 
 -- --------------------------------------------------------
 
@@ -270,7 +270,7 @@ CREATE TABLE IF NOT EXISTS `tbl_k_youtube` (
 --
 
 INSERT INTO `tbl_k_youtube` (`k_youtube_id`, `k_youtube_nama`, `k_youtube_deskripsi`, `k_youtube_photo`) VALUES
-(11, 'Share Button', 'https://www.youtube.com/embed/_K3yWQbMlbU', '491b6e1d72477449118f8437405f24cf.jpg');
+(11, 'Nama Video', 'https://www.youtube.com/embed/_K3yWQbMlbU', '491b6e1d72477449118f8437405f24cf.jpg');
 
 -- --------------------------------------------------------
 
@@ -315,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `tbl_pengguna` (
   `pengguna_register` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `pengguna_photo` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`pengguna_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data untuk tabel `tbl_pengguna`
@@ -323,8 +323,8 @@ CREATE TABLE IF NOT EXISTS `tbl_pengguna` (
 
 INSERT INTO `tbl_pengguna` (`pengguna_id`, `pengguna_nama`, `pengguna_moto`, `pengguna_jenkel`, `pengguna_username`, `pengguna_password`, `pengguna_tentang`, `pengguna_email`, `pengguna_nohp`, `pengguna_facebook`, `pengguna_twitter`, `pengguna_linkdin`, `pengguna_google_plus`, `pengguna_status`, `pengguna_level`, `pengguna_register`, `pengguna_photo`) VALUES
 (1, 'Ade Chandra Saputra', 'Just do it', 'L', 'admin', '87ef5d1c19b0c050aff89f1221ae1671', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-03 06:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg'),
-(2, 'admin', 'Just do it', 'L', 'admin', 'admin', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-02 23:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg'),
-(5, 'agus', NULL, 'L', 'agus', '04ad5266b790dc6d3c641bb45dbd6d96', NULL, 'agus@agus.com', '2312', NULL, NULL, NULL, NULL, 1, '1', '2018-11-01 14:53:20', 'b972270b7353f8acb45c8b9a9fc06dcf.png');
+(5, 'agus', NULL, 'L', 'agus', '04ad5266b790dc6d3c641bb45dbd6d96', NULL, 'agus@agus.com', '2312', NULL, NULL, NULL, NULL, 1, '1', '2018-11-01 14:53:20', 'b972270b7353f8acb45c8b9a9fc06dcf.png'),
+(9, 'Ade Chandra Saputra', 'Just do it', 'L', 'admin', '541ce7de15a7d7cd0e5e8161165254af', 'I am a mountainner. to me mountainerring is a life', 'ade.chandra.saputra.tumbai@gmail.com', '081299057613', 'facebook.com/m_fikri_setiadi', 'twitter.com/fiver_fiver', '', '', 1, '1', '2016-09-02 23:07:55', '88ddc9ffbc1e05bdd6a4631fbe127d56.jpg');
 
 -- --------------------------------------------------------
 
@@ -360,7 +360,7 @@ CREATE TABLE IF NOT EXISTS `tbl_pengunjung` (
   `pengunjung_ip` varchar(40) DEFAULT NULL,
   `pengunjung_perangkat` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`pengunjung_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=944 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=945 ;
 
 --
 -- Dumping data untuk tabel `tbl_pengunjung`
@@ -1310,7 +1310,8 @@ INSERT INTO `tbl_pengunjung` (`pengunjung_id`, `pengunjung_tanggal`, `pengunjung
 (940, '2019-09-19 06:44:37', '127.0.0.1', 'Chrome'),
 (941, '2019-09-19 18:17:05', '::1', 'Chrome'),
 (942, '2019-09-21 01:55:52', '::1', 'Chrome'),
-(943, '2019-09-21 01:55:52', '127.0.0.1', 'Chrome');
+(943, '2019-09-21 01:55:52', '127.0.0.1', 'Chrome'),
+(944, '2019-10-03 10:46:00', '::1', 'Chrome');
 
 -- --------------------------------------------------------
 
@@ -1349,7 +1350,7 @@ CREATE TABLE IF NOT EXISTS `tbl_tulisan` (
   PRIMARY KEY (`tulisan_id`),
   KEY `tulisan_kategori_id` (`tulisan_kategori_id`),
   KEY `tulisan_pengguna_id` (`tulisan_pengguna_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
