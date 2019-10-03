@@ -114,9 +114,8 @@
                 <div class="contact-form">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
-                            
                             <h3><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i>   sakti upr</a> </h3>
-                            
+                         
                             <h3><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i>   ukmsaktiupr</a></h3>
                             
                             <h3><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i>  sakti upr</h3></a>
