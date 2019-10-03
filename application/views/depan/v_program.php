@@ -81,7 +81,7 @@
                                 <li class="dropdown">
 								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
+									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
                                     <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
@@ -159,7 +159,7 @@
                             <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
                             <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                             <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>

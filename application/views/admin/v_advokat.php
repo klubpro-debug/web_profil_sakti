@@ -476,7 +476,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
                         <h4 class="modal-title" id="myModalLabel">Add Klub Multimedia</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/advokat/simpan_advokat'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/mulmed/simpan_mulmed'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 
                                     <div class="form-group">

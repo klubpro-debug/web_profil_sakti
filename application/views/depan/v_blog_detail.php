@@ -83,7 +83,7 @@
                                 </li> -->
  
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('advokat');?>">Klub</a>
+                                    <a class="nav-link" href="<?php echo site_url('mulmed');?>">Klub</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url('blog');?>">Berita</a>
