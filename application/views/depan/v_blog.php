@@ -196,9 +196,9 @@
                         <h3>Hubungi Kami</h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>

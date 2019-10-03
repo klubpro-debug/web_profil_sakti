@@ -302,7 +302,7 @@ p {
   font-size: 17px; }
 
 a {
-  color: #cbb58b;
+  color: #afb0da;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
@@ -2938,7 +2938,7 @@ div.panel {
   margin: 0 0 24px; }
 
 .contact-form {
-  background:rgb(200, 206, 201);
+  background:gray;
   position: relative;
   z-index: 2; }
   .contact-form h3 {

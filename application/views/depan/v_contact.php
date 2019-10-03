@@ -114,7 +114,14 @@
                 <div class="contact-form">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
-						<h3>Email : jsfjsfb@jdf</h3>
+                            
+                            <h3><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i>   sakti upr</a> </h3>
+                            
+                            <h3><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i>   ukmsaktiupr</a></h3>
+                            
+                            <h3><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i>  sakti upr</h3></a>
+                            <h3><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-envelope fa-fb" aria-hidden="true"></i>   upr.sakti@gmail.com</a> </h3>
+                            
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="contact-address">
@@ -190,11 +197,11 @@
                     <div class="address">
                         <h3>Hubungi Kami</h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
-                            <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                            </ul>
+                            <div class="footer-social-icons">
+                             <a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a>
+                             <a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a>
+                             <a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
