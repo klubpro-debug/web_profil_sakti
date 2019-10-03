@@ -51,6 +51,7 @@
 
     <div class="container nav-menu2">
             <div class="row">
+			
                 <div class="col-md-12">
                     <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
@@ -105,25 +106,28 @@
                         </div>
                     </nav>
                 </div>
+			
             </div>
+			
         </div>
       </div>
 	  
 <!--============================= carousel =============================-->
 <section>
-	<div class="container">
-		<div ="row">
-			<div ="col-md-8">
+	<div class="container" >
+		<div class ="row">
+			<div class="col-md-8">
 				<div class="slider_img layout_two">
-					<div id="carousel" class="carousel slide" data-ride="carousel">
+					<div id="carousel" class="carousel slide" data-ride="carousel" >
 						<ol class="carousel-indicators">
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel" data-slide-to="1"></li>
 							<li data-target="#carousel" data-slide-to="2"></li>
 						</ol>
+						
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="<?php echo base_url().'theme/images/m.jpg'?>" alt="First slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/m.jpg'?>" alt="First slide" width="800px" height="700" >
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<h1>Multimedia</h1>
@@ -135,7 +139,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/r.jpg'?>" alt="Second slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/r.jpg'?>" alt="Second slide"width="700px" height="700">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<h1>Robotik</h1>
@@ -147,7 +151,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/p.jpg'?>" alt="Third slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/p.jpg'?>" alt="Third slide"width="700px" height="700">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<h1>Programming</h1>
