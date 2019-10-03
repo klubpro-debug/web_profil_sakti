@@ -54,8 +54,8 @@
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <div class="col-md-2">
-                        <h3>UKM SAKTI</h3></a>
+                        <div class="col-md-3">
+                        <img src="<?php echo base_url().'theme/images/logo web copy 31.png'?>" width="80%" class="img-fluid" alt="footer_logo">
             </div>
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
