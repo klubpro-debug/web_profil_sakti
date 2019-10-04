@@ -127,7 +127,7 @@
 						
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="<?php echo base_url().'theme/images/klubmulmed.jpg'?>" alt="First slide" width="800px" height="700" >
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubmulmed.jpg'?>" alt="First slide" width="800px" height="1000" >
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<!--<h1>Multimedia</h1>
@@ -139,7 +139,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/klubrobo.jpg'?>" alt="Second slide"width="700px" height="700">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubrobo.jpg'?>" alt="Second slide"width="700px" height="1000">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<!--<h1>Robotik</h1>
@@ -151,7 +151,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/klubprogram.jpg'?>" alt="Third slide"width="700px" height="700">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubprogram.jpg'?>" alt="Third slide"width="700px" height="1000">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
 										<!--<h1>Programming</h1>
