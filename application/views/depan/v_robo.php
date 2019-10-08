@@ -87,7 +87,7 @@
 								</ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Video</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
