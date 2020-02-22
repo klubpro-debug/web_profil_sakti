@@ -25,7 +25,7 @@
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg"> <img width="220px;" height="140px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></p><hr/>
+    <p class="login-box-msg"> <img width="220px;" height="220px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></p><hr/>
 
     <form action="<?php echo site_url().'admin/login/auth'?>" method="post">
       <div class="form-group has-feedback">
@@ -39,9 +39,9 @@
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
-            <label>
+            <!--<label>
               <input type="checkbox"> Remember Me
-            </label>
+            </label>  -->
           </div>
         </div>
         <!-- /.col -->

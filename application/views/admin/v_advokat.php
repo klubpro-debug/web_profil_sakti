@@ -8,25 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Klub Multimedia</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
-    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+<?php $this->load->view("partials_admin/head.php") ?>
+  
 
 
 
@@ -203,12 +186,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Data Advokat
+        Data Klub Multimedia
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Advokat</li>
+        <li class="active">Klub Multimedia</li>
       </ol>
     </section>
 
@@ -220,7 +203,7 @@
 
           <div class="box">
             <div class="box-header">
-              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Advokat</a>
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Klub Multimedia</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -286,12 +269,8 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2018 UKM SAKTI PALANGKA RAYA</a>.</strong> All rights reserved.
-  </footer>
+  <?php $this->load->view("partials_admin/footer.php") ?>
+
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -495,9 +474,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Add advokat</h4>
+                        <h4 class="modal-title" id="myModalLabel">Add Klub Multimedia</h4>
                     </div>
-                    <form class="form-horizontal" action="<?php echo base_url().'admin/advokat/simpan_advokat'?>" method="post" enctype="multipart/form-data">
+                    <form class="form-horizontal" action="<?php echo base_url().'admin/mulmed/simpan_mulmed'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 
                                     <div class="form-group">
@@ -585,7 +564,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Edit advokat</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Klub Multimedia</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/advokat/update_advokat'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
@@ -687,13 +666,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus advokat</h4>
+                        <h4 class="modal-title" id="myModalLabel">Hapus Klub Multimedia</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/advokat/hapus_advokat'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                      <input type="hidden" value="<?php echo $photo;?>" name="gambar">
-                            <p>Apakah Anda yakin mau menghapus advokat <b><?php echo $nama;?></b> ?</p>
+                            <p>Apakah Anda yakin mau menghapus Klub Multimedia <b><?php echo $nama;?></b> ?</p>
 
                     </div>
                     <div class="modal-footer">
@@ -756,7 +735,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "advokat Berhasil disimpan ke database.",
+                    text: "Klub Multimedia Berhasil disimpan ke database.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
@@ -768,7 +747,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Info',
-                    text: "advokat berhasil di update",
+                    text: "Klub Multimedia berhasil di update",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
@@ -780,7 +759,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "advokat Berhasil dihapus.",
+                    text: "Klub Multimedia Berhasil dihapus.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,

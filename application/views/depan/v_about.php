@@ -22,7 +22,6 @@
     <!-- Main CSS -->
     <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
 </head>
-
 <body>
     <!--============================= HEADER =============================-->
     <div class="header-topbar">

@@ -24,10 +24,10 @@
 
 <body>
   <!--============================= HEADER =============================-->
-    <div class="header-topbar">
+  <div class="header-topbar">
         <div class="container">
             <div class="row">
-            <div class="col-xs-6 col-sm-8 col-md-9">
+                    <div class="col-xs-6 col-sm-8 col-md-9">
                     
                     </div>
                     <div class="col-xs-6 col-sm-4 col-md-3">
@@ -36,7 +36,10 @@
             </div>
         </div>
     </div>
-
+    <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
+    <div class="col-md-12">
+    </div> 
+     
     <div class="container nav-menu2">
             <div class="row">
                 <div class="col-md-12">
@@ -44,8 +47,8 @@
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <div class="col-md-2">
-                        <h3>UKM SAKTI</h3></a>
+                        <div class="col-md-3">
+                        <img src="<?php echo base_url().'theme/images/logo web copy 31.png'?>" width="80%" class="img-fluid" alt="footer_logo">
             </div>
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -76,8 +79,8 @@
                                 <li class="dropdown">
 								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                 </li>
@@ -111,11 +114,13 @@
                 <div class="contact-form">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 contact-option">
-						<h3>Email : jsfjsfb@jdf</h3>
-
-
-
-
+                            <h3><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i>   sakti upr</a> </h3>
+                         
+                            <h3><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i>   ukmsaktiupr</a></h3>
+                            
+                            <h3><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i>  sakti upr</h3></a>
+                            <h3><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-envelope fa-fb" aria-hidden="true"></i>   upr.sakti@gmail.com</a> </h3>
+                            
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             <div class="contact-address">
@@ -143,6 +148,25 @@
             </div>
         </div>
     </section>
+    
+    <!--============================= Lokasi =============================-->
+    <section class="contact">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-12">
+                <div class="contact-title">
+                    <h2>Lokasi UKM SAKTI</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <center>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=18vV4kJPulcETR8m0dbvjcCAX2pgRm0GK" width="640" height="480"></iframe>
+        </center>
+        </div>
+    </div>
+    </div>
+        </section>
     <!--//END  ABOUT IMAGE -->
     <!--============================= FOOTER =============================-->
     <footer>
@@ -164,7 +188,7 @@
                             <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
                             <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                             <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -172,11 +196,11 @@
                     <div class="address">
                         <h3>Hubungi Kami</h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
-                            <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
-                            </ul>
+                            <div class="footer-social-icons">
+                             <a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a>
+                             <a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a>
+                             <a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

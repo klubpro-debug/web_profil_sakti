@@ -8,25 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>UKM SAKTI | Klub Multimedia</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
-    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.css'?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
-  <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/skins/_all-skins.min.css'?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.css'?>"/>
+<?php $this->load->view("partials_admin/head.php") ?>
 
 
 
@@ -117,7 +99,7 @@
         </li>
 
         <li>
-          <a href="<?php echo base_url().'admin/advokat'?>">
+          <a href="<?php echo base_url().'admin/mulmed'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
@@ -203,12 +185,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Data robo
+        Data Klub Robotik
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">robo</li>
+        <li class="active">Klub Robotik</li>
       </ol>
     </section>
 
@@ -220,7 +202,7 @@
 
           <div class="box">
             <div class="box-header">
-              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add robo</a>
+              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Klub Robotik</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -272,12 +254,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
-    </div>
-    <strong>Copyright &copy; 2018 UKM SAKTI PALANGKA RAYA</a>.</strong> All rights reserved.
-  </footer>
+  <?php $this->load->view("partials_admin/footer.php") ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -481,7 +458,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Add robo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Add Klub Robotik</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/robo/simpan_robo'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
@@ -532,7 +509,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Edit robo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Edit Klub Robotik</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/robo/update_robo'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
@@ -586,13 +563,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus robo</h4>
+                        <h4 class="modal-title" id="myModalLabel">Hapus Klub Robotik</h4>
                     </div>
                     <form class="form-horizontal" action="<?php echo base_url().'admin/robo/hapus_robo'?>" method="post" enctype="multipart/form-data">
                     <div class="modal-body">
 							       <input type="hidden" name="kode" value="<?php echo $id;?>"/>
                      <input type="hidden" value="<?php echo $photo;?>" name="gambar">
-                            <p>Apakah Anda yakin mau menghapus robo <b><?php echo $nama;?></b> ?</p>
+                            <p>Apakah Anda yakin mau menghapus Klub Robotik <b><?php echo $nama;?></b> ?</p>
 
                     </div>
                     <div class="modal-footer">
@@ -655,7 +632,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "robo Berhasil disimpan ke database.",
+                    text: "Klub Robotik Berhasil disimpan ke database.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,
@@ -667,7 +644,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Info',
-                    text: "robo berhasil di update",
+                    text: "Klub Robotik berhasil di update",
                     showHideTransition: 'slide',
                     icon: 'info',
                     hideAfter: false,
@@ -679,7 +656,7 @@
         <script type="text/javascript">
                 $.toast({
                     heading: 'Success',
-                    text: "robo Berhasil dihapus.",
+                    text: "Klub Robotik Berhasil dihapus.",
                     showHideTransition: 'slide',
                     icon: 'success',
                     hideAfter: false,

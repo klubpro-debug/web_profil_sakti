@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Klub Robotik</title>
+    <title>Klub Robotika</title>
     <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
     <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
     <!-- Bootstrap CSS -->
@@ -49,8 +49,8 @@
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <div class="col-md-2">
-                        <h3>UKM SAKTI</h3></a>
+                        <div class="col-md-3">
+                        <img src="<?php echo base_url().'theme/images/logo web copy 31.png'?>" width="80%" class="img-fluid" alt="footer_logo">
             </div>
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -81,13 +81,13 @@
                                 <li class="dropdown">
 								<a class="nav-link" href="#">Klub</a>
 								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Video</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
@@ -159,7 +159,7 @@
                             <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
                             <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                             <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -168,9 +168,9 @@
                         <h3>Hubungi Kami</h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>

@@ -51,12 +51,13 @@
 
     <div class="container nav-menu2">
             <div class="row">
+			
                 <div class="col-md-12">
                     <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
                         <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                             <span class="icon-menu"></span>
                         </button>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                         <img src="<?php echo base_url().'theme/images/logo web copy 31.png'?>" width="80%" class="img-fluid" alt="footer_logo">
 						</div>
                         <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
@@ -90,13 +91,13 @@
                                 <li class="dropdown">
 								                <a class="nav-link" href="#">Klub</a>
                                                 <ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('advokat');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotik</a></li>
+									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
+                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
                                     <li><a href="<?php echo site_url('program');?>">Programming</a></li>
 								</ul>
                                               </li>
                                               <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Youtube</a>
+                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Video</a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
@@ -105,57 +106,59 @@
                         </div>
                     </nav>
                 </div>
+			
             </div>
+			
         </div>
       </div>
 	  
 <!--============================= carousel =============================-->
 <section>
-	<div class="container">
-		<div ="row">
-			<div ="col-md-8">
+	<div class="container" align = "center">
+		<div class ="row">
+			<div class="col-md-12">
 				<div class="slider_img layout_two">
-					<div id="carousel" class="carousel slide" data-ride="carousel">
+					<div id="carousel" class="carousel slide" data-ride="carousel" >
 						<ol class="carousel-indicators">
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel" data-slide-to="1"></li>
 							<li data-target="#carousel" data-slide-to="2"></li>
 						</ol>
+						
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider.jpg'?>" alt="First slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubmulmed.jpg'?>" alt="First slide" width="800px" height="1000" >
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Cecil B. DeMille</h1>
-										<h4>Prinsip merupakan hukum alam yang tidak dapat dilanggar. Kita tidak mungkin
-			melanggar hukum tersebut, kita hanya dapat menghancurkan diri kita karena melanggar hukum-hukum itu.</h4>
+										<!--<h1>Multimedia</h1>
+										<h4>Multimedia adalah penggunaan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi dan video dengan alat bantu (tool) dan koneksi (link) sehingga pengguna dapat ber-(navigasi), berinteraksi, berkarya dan berkomunikasi. Multimedia sering digunakan dalam dunia hiburan. Selain dari dunia hiburan, Multimedia juga diadopsi oleh dunia game.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('artikel');?>" class="btn btn-default">Learn more</a>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider-2.jpg'?>" alt="Second slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubrobo.jpg'?>" alt="Second slide"width="700px" height="1000">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Thomas Malthus</h1>
-										<h4>Telah tampak bahwa dari hukum-hukum alam kita yang tak terelakkan, beberapa manusia harus menderita karena kekurangan. Ini adalah orang-orang yang tidak bahagia yang, dalam undian besar kehidupan, telah melukis sesuatu yang kosong.</h4>
-										<div class="slider-btn">
-											<a href="<?php echo site_url('advokat');?>" class="btn btn-default">Learn more</a>
-										</div>
+										<!--<h1>Robotik</h1>
+										<h4>Robotika adalah satu cabang teknologi yang berhubungan dengan ayen, konstruksi, operasi, disposisi struktural, pembuatan, dan aplikasi dari robot. Robotika terkait dengan ilmu pengetahuan bidang elektronika, mesin, mekanika, dan perangkat lunak komputer.</h4>
+                                         <div class="slider-btn">
+											<a href="<?php echo site_url('mulmed');?>" class="btn btn-default">Learn more</a>
+										</div>-->
 									</div>
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img class="d-block" src="<?php echo base_url().'theme/images/slider-3.jpg'?>" alt="Third slide">
+								<img class="d-block" src="<?php echo base_url().'theme/images/klubprogram.jpg'?>" alt="Third slide"width="700px" height="1000">
 								<div class="carousel-caption d-md-block">
 									<div class="slider_title">
-										<h1>Max Planck</h1>
-										<h4>Kita tidak punya hak untuk berasumsi bahwa setiap hukum-hukum fisika yang ada, atau jika mereka telah ada sampai sekarang, bahwa mereka akan terus ada dengan cara yang sama di masa depan.</h4>
+										<!--<h1>Programming</h1>
+										<h4>Pemrograman adalah proses menulis, menguji dan memperbaiki, dan memelihara kode yang membangun suatu program komputer. Kode ini ditulis dalam berbagai bahasa pemrograman.</h4>
 										<div class="slider-btn">
 											<a href="<?php echo site_url('galeri');?>" class="btn btn-default">Learn more</a>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
@@ -320,7 +323,7 @@
                             <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
                             <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                             <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('advokat');?>">Klub</a></li>
+                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -329,9 +332,9 @@
                         <h3>Hubungi Kami </h3>
                         <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
                             <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -339,21 +342,8 @@
             </div>
         </footer>
         <!--//END FOOTER -->
-        <!-- jQuery, Bootstrap JS. -->
-        <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
-        <!-- Plugins -->
-        <script src="<?php echo base_url().'theme/js/slick.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/counterup.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
-        <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
-        <!-- Subscribe -->
-        <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
-        <!-- Script JS -->
-        <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
+
+        <?php $this->load->view("partials_depan/js.php") ?>
     </body>
 
     </html>
