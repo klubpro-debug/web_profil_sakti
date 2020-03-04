@@ -1,6 +1,3 @@
-<header>
-<div id="wrapper" class="clearfix">
-
 <header id="header" class="full-header">
 <div id="header-wrap">
 <div class="container clearfix">
@@ -18,6 +15,7 @@
 <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
 <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
 <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
+<li><a href="<?php echo site_url('about');?>">About Us</a></li>
 </ul>
 
 <div id="top-search">

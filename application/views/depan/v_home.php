@@ -10,12 +10,17 @@ $this->load->view('/partials_depan/head.php');
 
 <body class="stretched">
 <!--============================= navbar =============================-->
-<?php
-$this->load->view('/partials_depan/navbar.php');
-?>
+<?php $this->load->view('/partials_depan/navbar.php'); ?>
+<!--============================= navbar =============================-->
 
 
-<?php $this->load->view("partials_depan/js.php") ?>
+<!--============================= footer =============================-->
+<?php $this->load->view('/partials_depan/footer.php'); ?>
+<!--============================= footer =============================-->
+
+<!--============================= file JS =============================-->
+<?php $this->load->view('/partials_depan/js.php') ?>
+<!--============================= file JS =============================-->
 </body>
 
 </html>

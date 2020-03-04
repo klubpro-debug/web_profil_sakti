@@ -1,240 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/font-awesome.min.css'?>">
-    <!-- Simple Line Font -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/simple-line-icons.css'?>">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick-theme.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/owl.carousel.min.css'?>">
-    <!-- Main CSS -->
-    <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
+<?php 
+$this->load->view('/partials_depan/head.php');
+?>
+
 </head>
 
-<body>
-    <!--============================= HEADER =============================-->
-    <div class="header-topbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-sm-8 col-md-9">
-                    <div class="header-top_address">
-                        
-                        
-                    </div>
-                    
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                   
-                </div>
-            </div>
-        </div>
+<body class="stretched">
+<!--============================= navbar =============================-->
+<?php $this->load->view('/partials_depan/navbar-transparent.php'); ?>
+<!--============================= navbar =============================-->
+
+<section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
+        <h1>SAKTI</h1>
+        <span>UKM - UPR</span>
     </div>
-    <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
-        <div class="container nav-menu2">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
-                        <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                            <span class="icon-menu"></span>
-                        </button>
-                        <a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="200px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('');?>">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('advokat');?>">Advokat</a>
-                                </li>
-                              
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('blog');?>">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Pengumuman</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Contact</a>
-                                </li>
-                          </ul>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-      <section>
 </section>
-<!--//END HEADER -->
-<!--//END ABOUT IMAGE -->
-<!--============================= WELCOME TITLE =============================-->
-<section class="welcome_about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h2>Kata Sambutan</h2>
-                <p>Ikatan Advokat Indonesia yang didirikan di Jakarta pada tanggal 10 November 1985. Sejak berdirinya telah menyatakan sebagai Organisasi Profesi Advokat dan Organisasi Perjuangan.
 
-IKADIN sebagai Organisasi Profesi Advokat akan selalu memperjuangkan tegaknya hukum, keadilan dan kebenaran serta memperjuangkan hak dan kepentingan Advokat dalam melaksanakan tugas profesinya sebagai Advokat.
-
-Dalam situasi sekarang ini IKADIN bertekad untuk dapat meningkatkan integritas moral dan profesionalisme bagi anggotanya sehingga diharapkan Advokat IKADIN merupakan Advokat yang berintegritas tinggi yaitu Advokat yang tunduk kepada Kode Etik Advokat Indonesia.
-
-IKADIN bertekad pula untuk mempersatukan seluruh Advokat Indonesia, sehingga diharapkan dengan bersatunya Advokat Indonesia maka akan menjadi satu kekuatan besar di Indonesia dalam upaya menegakkan hukum dan keadilan, sehingga diharapkan Advokat IKADIN bersama dengan seluruh Advokat Indonesia mempunyai komitmen yang sama untuk memberantas praktek mafia peradilan di Indonesia.
-
-IKADIN senantiasa akan menjadikan anggotanya sebagai Advokat Pejuang artinya Advokat IKADIN harus rela berjuang tanpa pamrih agar keadilan di Indonesia ini benar-benar bisa dirasakan oleh seluruh rakyat Indonesia tanpa terkecuali.
-
-Mengingat Profesi Advokat adalah profesi yang mulia dan terhormat (officium nobile), maka diharapkan bagi setiap Advokat IKADIN untuk senantiasa menerapkan prinsip officium nobile pada saat menjalankan profesinya sebagai Advokat.
-
-Tugas mulia yang juga harus dilakukan oleh Advokat IKADIN adalah memberikan bantuan hukum kepada masyarakat yang tidak mampu, dengan melibatkan diri pada kegiatan Pos Bantuan Hukum (POSBAKUM) IKADIN yang didirikan oleh Dewan Pimpinan Cabang IKADIN seluruh Indonesia.
-
-Berdasarkan hasil Musyawarah Nasional IKADIN di Banjarmasin pada tanggal 31 Maret – 1 April 2015, maka IKADIN tetap mengakui PERADI sebagai satu-satunya Organisasi Profesi Advokat yang merupakan Organ Negara dalam arti luas yang bersifat mandiri yang juga menjalankan fungsi negara (independent state organ) dan mengingat PERADI didirikan sebagai amanat dari Undang-Undang No. 18 Tahun 2003 tentang Advokat dimana IKADIN berperan aktif untuk mendirikan PERADI sebagai satu-satunya Organisasi Profesi Advokat, maka IKADIN mendorong kepada anggota IKADIN yang berperan di PERADI pada semua tingkatan untuk tetap mempertahankan sikap sebagai Advokat Pejuang yang tetap menjunjung tinggi integritas moral dan tunduk kepada Kode Etik Advokat Indonesia, sehingga diharapkan Advokat IKADIN menjadi tauladan dalam menjalankan prinsip officium nobile.
-
-Jakarta, 10 November 2015
-
-H. Sutrisno, S.H., M.Hum.
-                </p>
-                
-                </div>
-                <div class="col-md-5">
-                    <img src="<?php echo base_url().'theme/images/welcome-img.jpg'?>" class="img-fluid" alt="#">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--//END WELCOME TITLE -->
-    <!--============================= TESTIMONIAL =============================-->
-
-    <!--//END TESTIMONIAL -->
-    <!--============================= DETAILED CHART =============================-->
-    <div class="detailed_chart">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
-                    
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_bottom">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_1.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_advokat;?></span> advokat
-                        </p>
+            <!-- Visi Misi Section Begin -->
+            <div class="container clearfix">
+                <div class="clear"></div>
+                <div class="fancy-title title-border title-center">
+                    <div class="clear"></div>
+                    <section id="section-vimi"></section>
+                    <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+                    <div class="heading-block title-center page-section">
+                        <h2>Visi & Misi</h2>
                     </div>
                 </div>
-               
-                <div class="col-xs-12 col-sm-6 col-md-3 chart_top">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_3.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_files;?></span> Download
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="chart-img">
-                        <img src="<?php echo base_url().'theme/images/chart-icon_4.png'?>" class="img-fluid" alt="chart_icon">
-                    </div>
-                    <div class="chart-text">
-                        <p><span class="counter"><?php echo $tot_agenda;?></span> Agenda</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--//END DETAILED CHART -->
-
-        <!--============================= FOOTER =============================-->
-        <footer>
-            <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="foot-logo">
-                            <a href="<?php echo site_url();?>">
-                                <img src="<?php echo base_url().'theme/images/logo-white.png'?>" class="img-fluid" alt="footer_logo">
-                            </a>
-                            <p><?php echo date('Y');?> © copyright by PERADI Palangka Raya</a>. <br>All rights reserved.</p>
-                            </div>
+                    <div class="col-lg-6">
+                        <div class="about-us">
+                            <h4>VISI</h4>
+                            <p>Having a baby can be a nerve wracking experience for new parents – not the nine
+                                months of pregnancy, I’m talking about after the infant is brought home from the
+                                hospital. It’s always the same thing, by the time they have their third child
+                                they have it all figured out, but with number one it’s a learning thing.
+                            </p>
+                            <p>Baby monitors help you hear your baby’s needs without you having to be in the
+                                room with the baby. Some baby monitors are portable, or “mobile” and are small
+                                enough that you can carry it in your pocket as you do your daily chores around
+                                the house. Depending on your price range it’s best to have a base unit that
+                                plugs into the wall. The receiving unit can be like your portable phone, you can
+                                carry it around with you, and plug it back into the base unit to be recharged.
+                            </p>
                         </div>
-                        <div class="col-md-3">
-                            <div class="sitemap">
-                                <h3>Menu Utama</h3>
-                                <ul>
-                                    <li><a href="<?php echo site_url();?>">Home</a></li>
-                                    <li><a href="<?php echo site_url('about');?>">About</a></li>
-                                    <li><a href="<?php echo site_url('artikel');?>">Blog </a></li>
-                                    <li><a href="<?php echo site_url('galeri');?>">Gallery</a></li>
-                                    <li><a href="<?php echo site_url('contact');?>">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="sitemap">
-                              <h3>Informasi</h3>
-                              <ul>
-                                  <li><a href="<?php echo site_url('advokat');?>">Advokat</a></li>
-                                  <li><a href="<?php echo site_url('pengumuman');?>">Pengumuman</a></li>
-                                  <li><a href="<?php echo site_url('agenda');?>">Agenda</a></li>
-                                  <li><a href="<?php echo site_url('download');?>">Download</a></li>
-                              </ul>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                    <div class="address">
-                        <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Temanggung Tilung </p>
-                    
-                            <ul class="footer-social-icons">
-                                <li><a href="#"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin fa-in" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter fa-tw" aria-hidden="true"></i></a></li>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-quality">
+                            <h4>MISI</h4>
+                            <p>Donec enim ipsum porta justo integer at velna vitae auctor integer congue magna
+                                at risus auctor purus unt pretium ligula rutrum integer sapien ultrice ligula
+                                luctus undo magna risus
+                            </p>
+                            <ul>
+                                <li><i class="fa fa-check-circle-o"></i>Lorem ipsum dolor sitdoni amet,
+                                    consectetur dont adipis elite vivamus interdum.
+                                </li>
+                                <li><i class="fa fa-check-circle-o"></i>Integer pulvinar ante nulla, ac
+                                    fermentum ex congue id vestibulum ensectetur.
+                                </li>
+                                <li><i class="fa fa-check-circle-o"></i>Proin blandit nibh in quam semper
+                                    iaculis lorem ipsum dolor salama ender.
+                                </li>
+                                <li><i class="fa fa-check-circle-o"></i>Quis ipsum suspendisse ultrices gravida.
+                                    Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                                </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- Visi Misi Section End -->
+
+                        <!-- Struktur Organisasi Begin -->
+                        <section id="content">
+                <div class="content-wrap">
+                    <div class="container clearfix">
+                        <div class="clear"></div>
+                        <section id="section-StuOr"></section>
+                        <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+                        <div class="heading-block title-center page-section">
+                            <h2>Struktur Organisasi</h2>
+                        </div>
+                        <div id="oc-team-list" class="owl-carousel team-carousel carousel-widget" data-margin="30" data-nav="false" data-items-md="1" data-items-xl="2">
+                            <div class="oc-item">
+                                <div class="team team-list clearfix">
+                                    <div class="team-image">
+                                        <img src="images/team/3.jpg" alt="John Doe">
+                                    </div>
+                                    <div class="team-desc">
+                                        <div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
+                                        <div class="team-content">
+                                            <p>Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower.
+                                            </p>
+                                        </div>
+                                        <a href="#" class="social-icon si-rounded si-small si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-gplus">
+                                            <i class="icon-gplus"></i>
+                                            <i class="icon-gplus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oc-item">
+                                <div class="team team-list">
+                                    <div class="team-image">
+                                        <img src="images/team/2.jpg" alt="Josh Clark">
+                                    </div>
+                                    <div class="team-desc">
+                                        <div class="team-title"><h4>Josh Clark</h4><span>Co-Founder</span></div>
+                                        <div class="team-content">
+                                            <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
+                                        </div>
+                                        <a href="#" class="social-icon si-rounded si-small si-github">
+                                            <i class="icon-github"></i>
+                                            <i class="icon-github"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-dribbble">
+                                            <i class="icon-dribbble"></i>
+                                            <i class="icon-dribbble"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oc-item">
+                                <div class="team team-list">
+                                    <div class="team-image">
+                                        <img src="images/team/8.jpg" alt="Mary Jane">
+                                    </div>
+                                    <div class="team-desc">
+                                        <div class="team-title"><h4>Mary Jane</h4><span>Sales</span></div>
+                                        <div class="team-content">
+                                            <p>Carbon emissions reductions giving, legitimize amplify non-partisan Aga Khan. Policy dialogue assessment expert free-speech cornerstone disruptor freedom. Cesar Chavez empower.</p>
+                                        </div>
+                                        <a href="#" class="social-icon si-rounded si-small si-facebook">
+                                            <i class="icon-facebook"></i>
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-twitter">
+                                            <i class="icon-twitter"></i>
+                                            <i class="icon-twitter"></i>
+                                            
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-linkedin">
+                                            <i class="icon-linkedin"></i>
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oc-item">
+                                <div class="team team-list clearfix">
+                                    <div class="team-image">
+                                        <img src="images/team/4.jpg" alt="Nix Maxwell">
+                                    </div>
+                                    <div class="team-desc">
+                                        <div class="team-title"><h4>Nix Maxwell</h4><span>Support</span></div>
+                                        <div class="team-content">
+                                            <p>Eradicate invest honesty human rights accessibility theory of social change. Diversity experience in the field compassion, inspire breakthroughs planned giving.</p>
+                                        </div>
+                                        <a href="#" class="social-icon si-rounded si-small si-forrst">
+                                            <i class="icon-forrst"></i>
+                                            <i class="icon-forrst"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-skype">
+                                            <i class="icon-skype"></i>
+                                            <i class="icon-skype"></i>
+                                        </a>
+                                        <a href="#" class="social-icon si-rounded si-small si-flickr">
+                                            <i class="icon-flickr"></i>
+                                            <i class="icon-flickr"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </footer>
-                <!--//END FOOTER -->
-                <!-- jQuery, Bootstrap JS. -->
-                <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
-                <!-- Plugins -->
-                <script src="<?php echo base_url().'theme/js/slick.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/counterup.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
-                <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
-                <!-- Subscribe -->
-                <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
-                <!-- Script JS -->
-                <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
-            </body>
+                </div>
+            </section>
+            <!-- Struktur Organisasi End -->
 
-            </html>
+            <!-- Map Section Begin -->
+            <div class="clear"></div>
+            <section id="section-alamat"></section>
+            <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+            <div class="heading-block title-center page-section">
+                <h2>Alamat</h2>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.835834958933!2d113.89598131423784!3d-2.2155282379692793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfcb387eff927dd%3A0x26ab0c830a2ede08!2sUKM%20SAKTI!5e0!3m2!1sid!2sid!4v1583033711447!5m2!1sid!2sid" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="map-hover"></div>
+            </div>
+            <!-- Map Section End -->
+
+<!--============================= footer =============================-->
+<?php $this->load->view('/partials_depan/footer.php'); ?>
+<!--============================= footer =============================-->
+
+<!--============================= file JS =============================-->
+<?php $this->load->view('/partials_depan/js.php') ?>
+<!--============================= file JS =============================-->
+</body>
+
+</html>
