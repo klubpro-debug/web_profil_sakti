@@ -42,6 +42,7 @@ class Blog extends CI_Controller{
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_tulisan->berita_perpage($offset,$limit);
 						$x['category']=$this->db->get('tbl_kategori');
+						$x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
 						$x['populer']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC LIMIT 5");
 						$this->load->view('depan/v_blog',$x);
 	}

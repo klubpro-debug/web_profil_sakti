@@ -17,6 +17,8 @@ class Home extends CI_Controller{
 			$x['tot_advokat']=$this->db->get('tbl_advokat')->num_rows();
 			$x['tot_files']=$this->db->get('tbl_files')->num_rows();
 			$x['tot_agenda']=$this->db->get('tbl_agenda')->num_rows();
+			$x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
+			$x['category']=$this->db->get('tbl_kategori');
 			$this->load->view('depan/v_home',$x);
 	}
 

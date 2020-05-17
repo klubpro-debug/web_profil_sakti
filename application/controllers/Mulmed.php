@@ -14,7 +14,7 @@ class Mulmed extends CI_Controller{
         else:
             $offset = $page;
         endif;
-        $limit=8;
+        $limit=5;
         $config['base_url'] = base_url() . 'mulmed/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;

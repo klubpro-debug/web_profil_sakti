@@ -10,7 +10,7 @@ $this->load->view('/partials_depan/head.php');
 
 <body class="stretched">
 <!--============================= navbar =============================-->
-<?php $this->load->view('/partials_depan/navbar-transparent.php'); ?>
+<?php $this->load->view('/partials_depan/navbar.php'); ?>
 <!--============================= navbar =============================-->
 
 <section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
@@ -76,8 +76,8 @@ $this->load->view('/partials_depan/head.php');
             </div>
             <!-- Visi Misi Section End -->
 
-                        <!-- Struktur Organisasi Begin -->
-                        <section id="content">
+            <!-- Struktur Organisasi Begin -->
+            <section id="content">
                 <div class="content-wrap">
                     <div class="container clearfix">
                         <div class="clear"></div>
@@ -90,7 +90,7 @@ $this->load->view('/partials_depan/head.php');
                             <div class="oc-item">
                                 <div class="team team-list clearfix">
                                     <div class="team-image">
-                                        <img src="images/team/3.jpg" alt="John Doe">
+                                        <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="John Doe">
                                     </div>
                                     <div class="team-desc">
                                         <div class="team-title"><h4>John Doe</h4><span>CEO</span></div>
@@ -116,7 +116,7 @@ $this->load->view('/partials_depan/head.php');
                             <div class="oc-item">
                                 <div class="team team-list">
                                     <div class="team-image">
-                                        <img src="images/team/2.jpg" alt="Josh Clark">
+                                        <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'; ?>" alt="Josh Clark">
                                     </div>
                                     <div class="team-desc">
                                         <div class="team-title"><h4>Josh Clark</h4><span>Co-Founder</span></div>
