@@ -19,6 +19,9 @@ class Home extends CI_Controller{
 			$x['tot_agenda']=$this->db->get('tbl_agenda')->num_rows();
 			$x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
 			$x['category']=$this->db->get('tbl_kategori');
+			$x['mulmed']=$this->db->query("SELECT * FROM tbl_k_mulmed");
+			$x['robo']=$this->db->query("SELECT * FROM tbl_k_robo");
+			$x['program']=$this->db->query("SELECT * FROM tbl_k_program");
 			$this->load->view('depan/v_home',$x);
 	}
 

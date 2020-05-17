@@ -173,13 +173,13 @@ $this->load->view('/partials_depan/head.php');
 
     <div id="gotoTop" class="icon-angle-up"></div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
+<!--============================= footer =============================-->
+<?php $this->load->view('/partials_depan/footer.php'); ?>
+<!--============================= footer =============================-->
 
-    <script src="js/functions.js"></script>
+<!--============================= file JS =============================-->
+<?php $this->load->view('/partials_depan/js.php') ?>
+<!--============================= file JS =============================-->
 </body>
-
-<!-- Mirrored from themes.semicolonweb.com/html/canvas/about-me.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jan 2020 05:21:52 GMT -->
 
 </html>
