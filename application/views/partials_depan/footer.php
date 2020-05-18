@@ -83,15 +83,19 @@ Jalan Hendrik Timang
 <div class="container clearfix">
 <div class="col_half col_last tright">
 <div class="fright clearfix">
-<a href="#" class="social-icon si-small si-borderless si-facebook">
+<a href="https://www.facebook.com/groups/sakti.upr/" class="social-icon si-small si-borderless si-facebook">
 <i class="icon-facebook"></i>
 <i class="icon-facebook"></i>
 </a>
-<a href="#" class="social-icon si-small si-borderless si-instagram">
+<a href="https://www.instagram.com/ukmsaktiupr/" class="social-icon si-small si-borderless si-instagram">
 <i class="icon-instagram"></i>
 <i class="icon-instagram"></i>
 </a>
-<a href="#" class="social-icon si-small si-borderless si-envelope">
+<a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A" class="social-icon si-small si-borderless si-youtube">
+<i class="icon-youtube"></i>
+<i class="icon-youtube"></i>
+</a>
+<a href="mailto:ukm.sakti@gmail.com" class="social-icon si-small si-borderless si-envelope">
 <i class="icon-envelope"></i>
 <i class="icon-envelope"></i>
 </a>
