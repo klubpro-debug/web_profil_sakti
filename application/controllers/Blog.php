@@ -15,7 +15,7 @@ class Blog extends CI_Controller{
             $offset = $page;
         endif;
         $limit=5;
-        $config['base_url'] = base_url() . 'blog/index/';
+        $config['base_url'] = base_url() . 'artikel/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;
             $config['uri_segment'] = 3;
@@ -42,6 +42,7 @@ class Blog extends CI_Controller{
             $x['page'] =$this->pagination->create_links();
 						$x['data']=$this->m_tulisan->berita_perpage($offset,$limit);
 						$x['category']=$this->db->get('tbl_kategori');
+						$x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
 						$x['populer']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC LIMIT 5");
 						$this->load->view('depan/v_blog',$x);
 	}
@@ -77,6 +78,7 @@ class Blog extends CI_Controller{
 		 if($query->num_rows() > 0){
 			 $x['data']=$query;
 			 $x['category']=$this->db->get('tbl_kategori');
+			 $x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
  			 $x['populer']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC LIMIT 5");
 			 $this->load->view('depan/v_blog',$x);
 		 }else{

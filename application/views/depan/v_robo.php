@@ -1,198 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from themes.semicolonweb.com/html/canvas/about-me.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jan 2020 05:21:52 GMT -->
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Klub Robotika</title>
-    <link rel="shorcut icon" href="<?php echo base_url().'theme/images/icon.png'?>">
-    <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/bootstrap.min.css'?>">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/font-awesome.min.css'?>">
-    <!-- Simple Line Font -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/simple-line-icons.css'?>">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/slick-theme.css'?>">
-    <link rel="stylesheet" href="<?php echo base_url().'theme/css/owl.carousel.min.css'?>">
-    <!-- Main CSS -->
-    <link href="<?php echo base_url().'theme/css/style.css'?>" rel="stylesheet">
+<?php 
+$this->load->view('/partials_depan/head.php');
+?>
+
 </head>
 
-<body>
-  <!--============================= HEADER =============================-->
-  <div class="header-topbar">
-        <div class="container">
-            <div class="row">
-            <div class="col-xs-6 col-sm-8 col-md-9">
-                    
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                    
-                    </div>
+<body class="stretched">
+<!--============================= navbar =============================-->
+<?php $this->load->view('/partials_depan/navbar.php'); ?>
+<!--============================= navbar =============================-->
+
+<section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
+    <div class="container clearfix">
+        <h1>SAKTI</h1>
+        <span>UKM - UPR</span>
+    </div>
+</section>
+
+        <!-- sejarah -->
+        <!----------------------------- AWAL JUDUL  ----------------------------->
+        <div class="clear"></div>
+        <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+        <div id="section-features" class="heading-block title-center page-section">
+            <h2>Tentang Divisi blabla</h2>
+            <span>----sejarah----</span>
+        </div>
+        <!----------------------------- AKHIR JUDUL  ----------------------------->
+
+        <div class="clear"></div>
+        <div class="col_two_third topmargin nobottommargin">
+            <div style="position: relative;" data-height-xl="500" data-height-lg="200" data-height-md="300" data-height-sm="316" data-height-xs="201">
+                <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="Mac" style="position: absolute; top: 0; left: 0;">
             </div>
+        </div>
+        <div class="col_one_third topmargin nobottommargin col_last">
+            <h3>Divisi blabla.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</p>
+            <ul class="iconlist iconlist-large iconlist-color">
+                <li><i class="icon-ok-sign"></i> Interactive Live Builder</li>
+                <li><i class="icon-ok-sign"></i> Valid HTML5 &amp; CSS3 Semantics</li>
+                <li><i class="icon-ok-sign"></i> 100% Open Source &amp; Customizable</li>
+                <li><i class="icon-ok-sign"></i> More than 70+ Widgets</li>
+                <li><i class="icon-ok-sign"></i> Responsive &amp; Retina Devices Support</li>
+                <li><i class="icon-ok-sign"></i> Easy Embeddable Media &amp; Graphics</li>
+                <li><i class="icon-ok-sign"></i> Lifetime <strong>FREE</strong> Updates</li>
+            </ul>
         </div>
     </div>
-    <div data-toggle="affix" style="border-bottom:solid 1px #f2f2f2;">
-    <div class="col-md-12">
-    </div> 
-     
-    <div class="container nav-menu2">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar2 navbar-toggleable-md navbar-light bg-faded">
-                        <button class="navbar-toggler navbar-toggler2 navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                            <span class="icon-menu"></span>
-                        </button>
-                        <div class="col-md-3">
-                        <img src="<?php echo base_url().'theme/images/logo web copy 31.png'?>" width="80%" class="img-fluid" alt="footer_logo">
-            </div>
-                        <!--<a href="<?php echo site_url('');?>" class="navbar-brand nav-brand2"><img class="img img-responsive" width="100px;" height="100px"  src="<?php echo base_url().'theme/images/logo-dark.png'?>"></a>-->
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('');?>">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('pengumuman');?>">Visimisi</a>
-                                </li>
-                                <!--
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('about');?>">About</a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('blog');?>">Berita</a>
-                                </li>
-                                <!--
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('agenda');?>">Agenda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('download');?>">Download</a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('galeri');?>">Galeri</a>
-                                </li>
-                                <li class="dropdown">
-								<a class="nav-link" href="#">Klub</a>
-								<ul class="dropdown-menu">
-									<li><a href="<?php echo site_url('mulmed');?>">Multimedia</a></li>
-                                    <li><a href="<?php echo site_url('robo');?>">Robotika</a></li>
-                                    <li><a href="<?php echo site_url('program');?>">Programming</a></li>
-								</ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url('youtube');?>">Video</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="<?php echo site_url('contact');?>">Kontak Kami</a>
-                                </li>
-                             </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-    <section>
-</section>
-<!--//END HEADER -->
 
-    <section class="our-teachers">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="mb-5">Keterangan Klub</h2>
+
+    <!-- akhir menu feature -->
+    <!----------------------------- AWAL JUDUL  ----------------------------->
+    <div class="clear"></div>
+    <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+    <div id="section-features" class="heading-block title-center page-section">
+        <h2>CABANG DIVISI</h2>
+        <span>----cabang----</span>
+    </div>
+
+    <div class="container clearfix">
+        <div class="col_one_fourth nobottommargin">
+            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt noborder icon-shop"></i></a>
+                </div>
+                <h3>Cabang 1<span class="subtitle">Deskripsi.....</span></h3>
+            </div>
+        </div>
+        <div class="col_one_fourth nobottommargin">
+            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt noborder icon-wallet"></i></a>
+                </div>
+                <h3>Cabang 2<span class="subtitle">Deskripsi....</span></h3>
+            </div>
+        </div>
+        <div class="col_one_fourth nobottommargin">
+            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt noborder icon-megaphone"></i></a>
+                </div>
+                <h3>Cabang 3<span class="subtitle">Deskripsi....</span></h3>
+            </div>
+        </div>
+        <div class="col_one_fourth nobottommargin col_last">
+            <div class="feature-box fbox-center fbox-light fbox-effect nobottomborder">
+                <div class="fbox-icon">
+                    <a href="#"><i class="i-alt noborder icon-fire"></i></a>
+                </div>
+                <h3>Cabang 4<span class="subtitle">Deskripsi....</span></h3>
+            </div>
+        </div>
+        <!-- <span>sejarah</span> -->
+    </div>
+    <!----------------------------- AKHIR JUDUL  ----------------------------->
+
+    <!-- menu feature -->
+    <!----------------------------- AWAL JUDUL  ----------------------------->
+    <div class="clear"></div>
+    <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+    <div id="section-bahasaPemprograman" class="heading-block title-center page-section">
+        <h2>Bahasa Pemprograman</h2>
+        <span>“I think everybody in this country should learn how to program a computer because it teaches you how to think.” — Steve Jobs dari Apple Inc.</span>
+    </div>
+    <!----------------------------- AKHIR JUDUL  ----------------------------->
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+                <div class="col_one_third">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-screen i-alt"></i></a>
+                        </div>
+                        <h3>Responsive Layout</h3>
+                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                    </div>
+                </div>
+                <div class="col_one_third">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-eye i-alt"></i></a>
+                        </div>
+                        <h3>Retina Ready Graphics</h3>
+                        <p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+                    </div>
+                </div>
+                <div class="col_one_third col_last">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-beaker i-alt"></i></a>
+                        </div>
+                        <h3>Powerful Performance</h3>
+                        <p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="col_one_third nobottommargin">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-stack i-alt"></i></a>
+                        </div>
+                        <h3>Premium Sliders Included</h3>
+                        <p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
+                    </div>
+                </div>
+                <div class="col_one_third nobottommargin">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-tint i-alt"></i></a>
+                        </div>
+                        <h3>Unlimited Color Options</h3>
+                        <p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
+                    </div>
+                </div>
+                <div class="col_one_third nobottommargin col_last">
+                    <div class="feature-box fbox-border fbox-effect">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-text-width i-alt"></i></a>
+                        </div>
+                        <h3>CUSTOMIZABLE FONTS</h3>
+                        <p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <?php foreach ($data->result() as $row) : ?>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
-                        <div class="admission_insruction">
-                          <?php if(empty($row->k_robo_photo)):?>
-                            <img src="<?php echo base_url().'assets/images/blank.png';?>" class="img-fluid" alt="#">
-                          <?php else:?>
-                            <img src="<?php echo base_url().'assets/images/'.$row->k_robo_photo;?>" class="img-fluid" alt="#">
-                          <?php endif;?>
-                            
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-9">
-                    <p class="mt-3"><span><?php echo $row->k_robo_nama;?></span>
-                                <br>
-                    <div class="col-md-10">
-                    <?php echo $row->k_robo_deskripsi;?></p>
-                    </div>
-                                
-                    </div>
-                   
-                <?php endforeach;?>
-              </div>
-            <!-- End row -->
-            <nav><?php echo $page;?></nav>
-        </div>
     </section>
 
-    <!--//End Style 2 -->
-    <!--============================= FOOTER =============================-->
-    <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="foot-logo">
-                    <a href="<?php echo site_url();?>">
-                    <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" class="img-fluid" alt="footer_logo">
-                    </a>
-                     <p><?php echo date('Y');?> © copyright by UKM SAKTI Palangka Raya</a>. <br>All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="sitemap">
-                        <h3>Menu Utama</h3>
-                        <ul>
-                            <li><a href="<?php echo site_url();?>">Beranda</a></li>
-                            <li><a href="<?php echo site_url('artikel');?>">Berita </a></li>
-                            <li><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
-                            <li><a href="<?php echo site_url('contact');?>">Kontak</a></li>
-                            <li><a href="<?php echo site_url('mulmed');?>">Klub</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="address">
-                        <h3>Hubungi Kami</h3>
-                        <p><span>Alamat: </span> Palangka Raya Kalimantan Tengah, Jalan Hendrik Timang </p>
-                            <ul class="footer-social-icons">
-                            <li><a href="https://www.facebook.com/groups/sakti.upr/"><i class="fa fa-facebook fa-fb" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.instagram.com/ukmsaktiupr/"><i class="fa fa-instagram fa-tw" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UC0QFw_vfv2UIPFn8kK_Se4A"><i class="fa fa-youtube fa-in" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-            <!--//END FOOTER -->
-            <!-- jQuery, Bootstrap JS. -->
-    <script src="<?php echo base_url().'theme/js/jquery.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/tether.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/bootstrap.min.js'?>"></script>
-    <!-- Plugins -->
-    <script src="<?php echo base_url().'theme/js/slick.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/waypoints.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/counterup.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/owl.carousel.min.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/validate.js'?>"></script>
-    <script src="<?php echo base_url().'theme/js/tweetie.min.js'?>"></script>
-    <!-- Subscribe -->
-    <script src="<?php echo base_url().'theme/js/subscribe.js'?>"></script>
-    <!-- Script JS -->
-    <script src="<?php echo base_url().'theme/js/script.js'?>"></script>
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+<!--============================= footer =============================-->
+<?php $this->load->view('/partials_depan/footer.php'); ?>
+<!--============================= footer =============================-->
+
+<!--============================= file JS =============================-->
+<?php $this->load->view('/partials_depan/js.php') ?>
+<!--============================= file JS =============================-->
 </body>
 
 </html>

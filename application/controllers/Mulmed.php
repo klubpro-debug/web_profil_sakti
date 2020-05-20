@@ -14,8 +14,8 @@ class Mulmed extends CI_Controller{
         else:
             $offset = $page;
         endif;
-        $limit=8;
-        $config['base_url'] = base_url() . 'mulmed/index/';
+        $limit=5;
+        $config['base_url'] = base_url() . 'divisi/index/';
             $config['total_rows'] = $jum->num_rows();
             $config['per_page'] = $limit;
             $config['uri_segment'] = 3;
@@ -41,8 +41,8 @@ class Mulmed extends CI_Controller{
             $config['prev_link'] = '<< Prev';
             $this->pagination->initialize($config);
             $x['page'] =$this->pagination->create_links();
-						$x['data']=$this->m_mulmed->mulmed_perpage($offset,$limit);
-						$this->load->view('depan/v_mulmed',$x);
+			$x['data']=$this->m_mulmed->mulmed_perpage($offset,$limit);
+			$this->load->view('depan/v_mulmed',$x);
 	}
 
 }
