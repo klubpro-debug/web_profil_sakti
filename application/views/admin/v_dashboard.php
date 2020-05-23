@@ -1,15 +1,8 @@
-<!--Counter Inbox-->
-<?php
-    error_reporting(0);
-    $query=$this->db->query("SELECT * FROM tbl_inbox WHERE inbox_status='1'");
-    $query2=$this->db->query("SELECT * FROM tbl_komentar WHERE komentar_status='0'");
-    $jum_comment=$query2->num_rows();
-    $jum_pesan=$query->num_rows();
-?>
 <!DOCTYPE html>
 <html>
+
 <head>
-<?php $this->load->view("partials_admin/head.php") ?>
+  <?php $this->load->view("partials_admin/head.php") ?>
   <?php
         /* Mengambil query report*/
         foreach($visitor as $result){
@@ -18,496 +11,275 @@
         }
         /* end mengambil query*/
 
-    ?>
+?>
 
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
 
-  <!--Header-->
-  <?php
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!--Header-->
+    <?php
     $this->load->view('admin/v_header');
   ?>
 
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="<?php echo base_url().''?>" class="brand-link">
+        <img src="dist/img/" alt="Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">        
+        <span class="brand-text font-weight-light">UHO</span>
+      </a>
 
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
-        <li class="header">Menu Utama</li>
-        <li class="active">
-          <a href="<?php echo base_url().'admin/dashboard'?>">
-            <i class="fa fa-home"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-newspaper-o"></i>
-            <span>Berita</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/tulisan'?>"><i class="fa fa-list"></i> List Berita</a></li>
-            <li><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
-            <li><a href="<?php echo base_url().'admin/kategori'?>"><i class="fa fa-wrench"></i> Kategori</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="<?php echo base_url().'admin/pengguna'?>">
-            <i class="fa fa-users"></i> <span>Pengguna</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <!--
-        <li>
-          <a href="<?php echo base_url().'admin/agenda'?>">
-            <i class="fa fa-calendar"></i> <span>Agenda</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>-->
-        <li>
-          <a href="<?php echo base_url().'admin/pengumuman'?>">
-            <i class="fa fa-volume-up"></i> <span>Visimisi</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <!--
-        <li>
-          <a href="<?php echo base_url().'admin/files'?>">
-            <i class="fa fa-download"></i> <span>Download</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>-->
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-camera"></i>
-            <span>Gallery</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/album'?>"><i class="fa fa-clone"></i> Album</a></li>
-            <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="<?php echo base_url().'admin/mulmed'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo base_url().'admin/robo'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Klub Robotik</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo base_url().'admin/program'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Klub Programming</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo base_url().'admin/youtube'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-        <!--
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-user"></i>
-            <span>Kesiswaan</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
-            <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-          </ul>
-        </li>
-        -->
-        <li>
-          <a href="<?php echo base_url().'admin/inbox'?>">
-            <i class="fa fa-envelope"></i> <span>Inbox</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green"><?php echo $jum_pesan;?></small>
-            </span>
-          </a>
-        </li>
+      <!-- Sidebar -->
+      <div class="sidebar">
 
-        <li>
-          <a href="<?php echo base_url().'admin/komentar'?>">
-            <i class="fa fa-comments"></i> <span>Komentar</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green"><?php echo $jum_comment;?></small>
-            </span>
-          </a>
-        </li>
-
-         <li>
-          <a href="<?php echo base_url().'administrator/logout'?>">
-            <i class="fa fa-sign-out"></i> <span>Sign Out</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
-
-
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small></small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <!-- Info boxes -->
-      <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-chrome"></i></span>
-              <?php
-                  $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Chrome'");
-                  $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Chrome</span>
-              <span class="info-box-number"><?php echo $jml;?></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-firefox"></i></span>
-            <?php
-                  $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Firefox' OR pengunjung_perangkat='Mozilla'");
-                  $jml=$query->num_rows();
-            ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Mozilla Firefox</span>
-              <span class="info-box-number"><?php echo $jml;?></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
-        <div class="clearfix visible-sm-block"></div>
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="fa fa-bug"></i></span>
-              <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Googlebot'");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Googlebot</span>
-              <span class="info-box-number"><?php echo $jml;?></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="fa fa-opera"></i></span>
-            <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Opera'");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Opera</span>
-              <span class="info-box-number"><?php echo $jml;?></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Artikel
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?php echo base_url().'admin/artikel'?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>List Artikel</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php echo base_url().'admin/artikel/add_artikel'?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Post Artikel</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php echo base_url().'admin/kategori'?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Kategori</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Banner
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?php echo base_url().'admin/banner'?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>List Banner</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?php echo base_url().'admin/banner/add_banner'?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Post Banner</p>
+                  </a>
+                </li>
+              </ul>
+            </li>        
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fa fa-sign-out-alt"></i>
+                <p>
+                  Sign Out
+                </p>
+              </a>
+            </li>
+          </u>
+        </nav>
+        <!-- /.sidebar-menu -->
       </div>
-      <!-- /.row -->
+      <!-- /.sidebar -->
+    </aside>
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <h3 class="box-title">Pengunjung bulan ini</h3>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">Dashboard</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
 
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="row">
-                <div class="col-md-12">
+      <section class="content">
+        <div class="container-fluid">
+          <!-- Small boxes (Stat box) -->
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-info">
+                <?php
+                  $query=$this->db->query("SELECT * FROM pengunjung WHERE pengunjung_perangkat='Chrome'");
+                  $jml=$query->num_rows();
+              ?>
+                <div class="inner">
+                  <h3><?php echo $jml;?></h3>
 
-                  <div class="col-md-12">
-                          <canvas id="canvas" width="1000" height="280"></canvas>
-                  </div>
-                  <!-- /.chart-responsive -->
+                  <p>Chrome</p>
                 </div>
-                <!-- /.col -->
-
-                <!-- /.col -->
+                <div class="icon">
+                  <i class="ion ion-social-chrome"></i>
+                </div>
               </div>
-              <!-- /.row -->
             </div>
-            <!-- ./box-body -->
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-danger">
+                <?php
+                  $query=$this->db->query("SELECT * FROM pengunjung WHERE pengunjung_perangkat='Firefox' OR pengunjung_perangkat='Mozilla'");
+                  $jml=$query->num_rows();
+              ?>
+                <div class="inner">
+                  <h3><?php echo $jml;?></h3>
 
-            <!-- /.box-footer -->
+                  <p>Firefox</p>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-success">
+                <?php
+                    $query=$this->db->query("SELECT * FROM pengunjung WHERE pengunjung_perangkat='Googlebot'");
+                    $jml=$query->num_rows();
+              ?>
+                <div class="inner">
+                  <h3><?php echo $jml;?></h3>
+
+                  <p>Googlebot</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-bug"></i>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-6">
+              <!-- small box -->
+              <div class="small-box bg-warning">
+                <?php
+                    $query=$this->db->query("SELECT * FROM pengunjung WHERE pengunjung_perangkat='Opera'");
+                    $jml=$query->num_rows();
+              ?>
+                <div class="inner">
+                  <h3><?php echo $jml;?></h3>
+
+                  <p>Opera</p>
+                </div>
+              </div>
+            </div>
+            <!-- ./col -->
           </div>
-          <!-- /.box -->
+          <!-- /.row -->
+          <!-- /.row (main row) -->
+          <!-- AREA CHART -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Pengunjung Bulan Ini</h3>
+            </div>
+            <div class="card-body">
+              <div class="chart">
+                <canvas id="areaChart"
+                  style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
         </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
+        <!-- /.container-fluid -->
+      </section>
 
-      <!-- Main row -->
-      <div class="row">
-        <!-- Left col -->
-        <div class="col-md-8">
-          <!-- MAP & BOX PANE -->
-          <div class="box box-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Posting Populer</h3>
+    </div>
+    <!--Footer-->
+    <?php $this->load->view('partials_admin/footer.php'); ?>
 
-              <table class="table">
-              <?php
-                  $query=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_views DESC");
-                  foreach ($query->result_array() as $i) :
-                      $tulisan_id=$i['tulisan_id'];
-                      $tulisan_judul=$i['tulisan_judul'];
-                      $tulisan_views=$i['tulisan_views'];
-              ?>
-                  <tr>
-                    <td><?php echo $tulisan_judul;?></td>
-                    <td><?php echo $tulisan_views.' Views';?></td>
-                  </tr>
-              <?php endforeach;?>
-              </table>
-            </div>
+    <?php $this->load->view("partials_admin/js.php"); ?>
+    <!-- page script -->
+    <script>
+      $(function () {
+        /* ChartJS
+         * -------
+         * Here we will create a few charts using ChartJS
+         */
 
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+        //--------------
+        //- AREA CHART -
+        //--------------
 
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
+        // Get context with jQuery - using jQuery's .get() method.
+        var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
 
-        <div class="col-md-4">
-          <!-- Info Boxes Style 2 -->
-          <div class="info-box bg-yellow">
-            <span class="info-box-icon"><i class="fa fa-safari"></i></span>
-            <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Safari'");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Safari</span>
-              <span class="info-box-number"><?php echo number_format($jml);?></span>
+        var areaChartData = {
+          labels: <?php echo json_encode($bulan); ?> ,
+          datasets : [{
+            label: 'Digital Goods',
+            backgroundColor: 'rgba(60,141,188,0.9)',
+            borderColor: 'rgba(60,141,188,0.8)',
+            pointRadius: false,
+            pointColor: '#3b8bba',
+            pointStrokeColor: 'rgba(60,141,188,1)',
+            pointHighlightFill: '#fff',
+            pointHighlightStroke: 'rgba(60,141,188,1)',
+            data: <?php echo json_encode($value); ?>
+          }]
+        }
 
-              <div class="progress">
-                <div class="progress-bar" style="width: 100%"></div>
-              </div>
-                  <span class="progress-description">
-                    Penggunjung
-                  </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-          <div class="info-box bg-green">
-            <span class="info-box-icon"><i class="fa fa-globe"></i></span>
-            <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE pengunjung_perangkat='Other' OR pengunjung_perangkat='Internet Explorer'");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Lainnya</span>
-              <span class="info-box-number"><?php echo number_format($jml);?></span>
+        var areaChartOptions = {
+          maintainAspectRatio: false,
+          responsive: true,
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [{
+              gridLines: {
+                display: true,
+              }
+            }],
+            yAxes: [{
+              gridLines: {
+                display: true,
+              }
+            }]
+          }
+        }
 
-              <div class="progress">
-                <div class="progress-bar" style="width: 100%"></div>
-              </div>
-                  <span class="progress-description">
-                    Pengunjung
-                  </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-          <div class="info-box bg-red">
-            <span class="info-box-icon"><i class="fa fa-users"></i></span>
-            <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE DATE_FORMAT(pengunjung_tanggal,'%m%y')=DATE_FORMAT(DATE_SUB(CURDATE(), INTERVAL 1 MONTH),'%m%y')");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Pengunjung Bulan Lalu</span>
-              <span class="info-box-number"><?php echo number_format($jml);?></span>
+        // This will get the first returned node in the jQuery collection.
+        var areaChart = new Chart(areaChartCanvas, {
+          type: 'line',
+          data: areaChartData,
+          options: areaChartOptions
+        })
 
-              <div class="progress">
-                <div class="progress-bar" style="width: 100%"></div>
-              </div>
-                  <span class="progress-description">
-                    Pengunjung
-                  </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-          <div class="info-box bg-aqua">
-            <span class="info-box-icon"><i class="fa fa-users"></i></span>
-             <?php
-                    $query=$this->db->query("SELECT * FROM tbl_pengunjung WHERE DATE_FORMAT(pengunjung_tanggal,'%m%y')=DATE_FORMAT(CURDATE(),'%m%y')");
-                    $jml=$query->num_rows();
-              ?>
-            <div class="info-box-content">
-              <span class="info-box-text">Pengunjung Bulan Ini</span>
-              <span class="info-box-number"><?php echo number_format($jml);?></span>
-
-              <div class="progress">
-                <div class="progress-bar" style="width: 100%"></div>
-              </div>
-                  <span class="progress-description">
-                    Pengunjung
-                  </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-
-          <!-- PRODUCT LIST -->
-
-          <!-- /.box -->
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <?php $this->load->view("partials_admin/footer.php") ?>
-
-
-</div>
-<!-- ./wrapper -->
-
-<!-- jQuery 2.2.3 -->
-<script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
-<!-- FastClick -->
-<script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo base_url().'assets/dist/js/app.min.js'?>"></script>
-<!-- Sparkline -->
-<script src="<?php echo base_url().'assets/plugins/sparkline/jquery.sparkline.min.js'?>"></script>
-<!-- jvectormap -->
-<script src="<?php echo base_url().'assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'?>"></script>
-<script src="<?php echo base_url().'assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'?>"></script>
-<!-- SlimScroll 1.3.0 -->
-<script src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>"></script>
-<!-- ChartJS 1.0.1 -->
-<script src="<?php echo base_url().'assets/plugins/chartjs/Chart.min.js'?>"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?php echo base_url().'assets/dist/js/pages/dashboard2.js'?>"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
-
-<script>
-
-            var lineChartData = {
-                labels : <?php echo json_encode($bulan);?>,
-                datasets : [
-
-                    {
-                        fillColor: "rgba(60,141,188,0.9)",
-                        strokeColor: "rgba(60,141,188,0.8)",
-                        pointColor: "#3b8bba",
-                        pointStrokeColor: "#fff",
-                        pointHighlightFill: "#fff",
-                        pointHighlightStroke: "rgba(152,235,239,1)",
-                        data : <?php echo json_encode($value);?>
-                    }
-
-                ]
-
-            }
-
-        var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
-
-        var canvas = new Chart(myLine).Line(lineChartData, {
-            scaleShowGridLines : true,
-            scaleGridLineColor : "rgba(0,0,0,.005)",
-            scaleGridLineWidth : 0,
-            scaleShowHorizontalLines: true,
-            scaleShowVerticalLines: true,
-            bezierCurve : true,
-            bezierCurveTension : 0.4,
-            pointDot : true,
-            pointDotRadius : 4,
-            pointDotStrokeWidth : 1,
-            pointHitDetectionRadius : 2,
-            datasetStroke : true,
-            tooltipCornerRadius: 2,
-            datasetStrokeWidth : 2,
-            datasetFill : true,
-            legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
-            responsive: true
-        });
-
-        </script>
-
+      })
+    </script>
 </body>
-</html>

@@ -3,7 +3,7 @@ class Dashboard extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		if($this->session->userdata('masuk') !=TRUE){
-            $url=base_url('administrator');
+            $url=base_url('admin/login');
             redirect($url);
         };
 		$this->load->model('m_pengunjung');
@@ -13,9 +13,8 @@ class Dashboard extends CI_Controller{
 			$x['visitor'] = $this->m_pengunjung->statistik_pengujung();
 			$this->load->view('admin/v_dashboard',$x);
 		}else{
-			redirect('administrator');
+			redirect('admin/login');
 		}
-	
 	}
 	
 }

@@ -8,10 +8,10 @@ class Login extends CI_Controller{
         $this->load->view('admin/v_login');
     }
     function auth(){
-        $username=strip_tags(str_replace("'", "", $this->input->post('username')));
-        $password=strip_tags(str_replace("'", "", $this->input->post('password')));
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
         $u=$username;
-        $p=$password;
+        $p=md5($password);
         $cadmin=$this->m_login->cekadmin($u,$p);
         echo json_encode($cadmin);
         if($cadmin->num_rows() > 0){

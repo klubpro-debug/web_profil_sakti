@@ -3,25 +3,14 @@ class Home extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_tulisan');
-		$this->load->model('m_galeri');
-		$this->load->model('m_pengumuman');
-		$this->load->model('m_agenda');
-		$this->load->model('m_files');
+		$this->load->model('m_artikel');
 		$this->load->model('m_pengunjung');
+		$this->load->model('m_kategori');
 		$this->m_pengunjung->count_visitor();
 	}
 	function index(){
-			$x['berita']=$this->m_tulisan->get_berita_home();
-			$x['pengumuman']=$this->m_pengumuman->get_pengumuman_home();
-			$x['agenda']=$this->m_agenda->get_agenda_home();
-			$x['tot_advokat']=$this->db->get('tbl_advokat')->num_rows();
-			$x['tot_files']=$this->db->get('tbl_files')->num_rows();
-			$x['tot_agenda']=$this->db->get('tbl_agenda')->num_rows();
-			$x['terbaru']=$this->db->query("SELECT * FROM tbl_tulisan ORDER BY tulisan_tanggal DESC LIMIT 5");
-			$x['category']=$this->db->get('tbl_kategori');
-			$x['mulmed']=$this->db->query("SELECT * FROM tbl_k_mulmed");
-			$x['robo']=$this->db->query("SELECT * FROM tbl_k_robo");
-			$x['program']=$this->db->query("SELECT * FROM tbl_k_program");
+			$x['terbaru']=$this->db->query("SELECT * FROM artikel ORDER BY artikel_tanggal DESC LIMIT 5");
+			$x['category']=$this->db->get('kategori');
 			$this->load->view('depan/v_home',$x);
 	}
 
