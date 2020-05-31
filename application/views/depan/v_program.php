@@ -15,8 +15,8 @@
 
 <section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
     <div class="container clearfix">
-        <h1>SAKTI</h1>
-        <span>UKM - UPR</span>
+        <h1>DIVISI PEMROGRAMAN</h1>
+        <span>UKM SAKTI - UPR</span>
     </div>
 </section>
 
@@ -25,7 +25,7 @@
         <div class="clear"></div>
         <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
         <div id="section-features" class="heading-block title-center page-section">
-            <h2>Tentang Divisi blabla</h2>
+            <h2>TENTANG DIVISI PROGRAMMING</h2>
             <span>----sejarah----</span>
         </div>
         <!----------------------------- AKHIR JUDUL  ----------------------------->
