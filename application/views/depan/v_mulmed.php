@@ -38,7 +38,7 @@ $this->load->view('/partials_depan/head.php');
                 <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="Mac" style="position: absolute; top: 0; left: 0;">
             </div>
         </div>
-        <div class="col_two_third topmargin nobottommargin col_last">
+        <div class="col_one_third topmargin nobottommargin col_last">
             <h3>Divisi blabla.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</p>
