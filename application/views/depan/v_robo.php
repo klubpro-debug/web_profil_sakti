@@ -17,8 +17,8 @@ $this->load->view('/partials_depan/head.php');
 
 <section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
     <div class="container clearfix">
-        <h1>SAKTI</h1>
-        <span>UKM - UPR</span>
+        <h1>DIVISI ROBOTIKA</h1>
+        <span>UKM SAKTI - UPR</span>
     </div>
 </section>
 
@@ -27,18 +27,18 @@ $this->load->view('/partials_depan/head.php');
         <div class="clear"></div>
         <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
         <div id="section-features" class="heading-block title-center page-section">
-            <h2>Tentang Divisi blabla</h2>
+            <h2>TENTANG DIVISI ROBOTIKA</h2>
             <span>----sejarah----</span>
         </div>
         <!----------------------------- AKHIR JUDUL  ----------------------------->
 
         <div class="clear"></div>
-        <div class="col_two_third topmargin nobottommargin">
+        <div class="col_one_third topmargin nobottommargin">
             <div style="position: relative;" data-height-xl="500" data-height-lg="200" data-height-md="300" data-height-sm="316" data-height-xs="201">
                 <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="Mac" style="position: absolute; top: 0; left: 0;">
             </div>
         </div>
-        <div class="col_one_third topmargin nobottommargin col_last">
+        <div class="col_two_third topmargin nobottommargin col_last">
             <h3>Divisi blabla.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</p>
