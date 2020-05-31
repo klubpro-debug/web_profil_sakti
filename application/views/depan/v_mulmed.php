@@ -39,9 +39,9 @@ $this->load->view('/partials_depan/head.php');
             </div>
         </div>
         <div class="col_two_third topmargin nobottommargin col_last">
-            <h3>Divisi blabla.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</p>
+        <h2>Divisi Programming.</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</h4>
             <ul class="iconlist iconlist-large iconlist-color">
                 <li><i class="icon-ok-sign"></i> Interactive Live Builder</li>
                 <li><i class="icon-ok-sign"></i> Valid HTML5 &amp; CSS3 Semantics</li>
