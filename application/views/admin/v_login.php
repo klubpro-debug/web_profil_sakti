@@ -1,80 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Login Admin UKM Sakti</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'theme/images/logo-dark.png'?>">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/bootstrap/css/bootstrap.min.css'?>">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/font-awesome/css/font-awesome.min.css'?>">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/dist/css/AdminLTE.min.css'?>">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="<?php echo base_url().'assets/plugins/iCheck/square/blue.css'?>">
-
-
+    <?php
+    $this->load->view('/partials_depan/head.php');
+    ?>
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div>
-   <p><?php echo $this->session->flashdata('msg');?></p>
-  </div>
-  <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg"> <img width="220px;" height="220px;" src="<?php echo base_url().'theme/images/logo-dark.png'?>"></p><hr/>
 
-    <form action="<?php echo site_url().'admin/login/auth'?>" method="post">
-      <div class="form-group has-feedback">
-        <input type="text" name="username" class="form-control" placeholder="Username" required>
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+<body class="stretched">
+<div id="wrapper" class="clearfix">
+<section id="content">
+<div class="content-wrap nopadding">
+<div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url('images/parallax/home/1.jpg') center center no-repeat; background-size: cover;"></div>
+<div class="section nobg full-screen nopadding nomargin">
+<div class="container-fluid vertical-middle divcenter clearfix">
+<div class="center">
+    <img src="<?php echo base_url().'theme/images/Logo Sakti.png'?>" width="120px" height="120px" alt="">
+</div>
+<div class="card divcenter noradius noborder" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
+  <div class="card-body" style="padding: 40px;">
+
+    <form id="login-form" name="login-form" class="nobottommargin" action="
+      <?php echo site_url().'admin/login/auth'?>" method="post">
+      <h3>Login Admin Web UKM</h3>
+      <div class="col_full">
+          <label for="login-form-username">Username:</label>
+          <input type="text" name="username" class="form-control" placeholder="Username" required>
+              <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
-      <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      <div class="col_full">
+          <label for="login-form-password">Password:</label>
+          <input type="password" name="password" class="form-control" placeholder="Password" required>
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <!--<label>
-              <input type="checkbox"> Remember Me
-            </label>  -->
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-        </div>
-        <!-- /.col -->
+      <div class="col_full nobottommargin">
+        <button type="submit" class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login" >Login</button>
       </div>
     </form>
 
-
-    <!-- /.social-auth-links -->
-    <hr/>
-    <p><center>Copyright <?php echo date('Y');?> UKM SAKTI Palangka Raya <br/> All Right Reserved</center></p>
   </div>
-  <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->
 
-<!-- jQuery 2.2.3 -->
-<script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
-<!-- iCheck -->
-<script src="<?php echo base_url().'assets/plugins/iCheck/icheck.min.js'?>"></script>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
-      increaseArea: '20%' // optional
-    });
-  });
-</script>
+<div class="center dark">
+    <p><small>Copyright <?php echo date('Y');?> UKM SAKTI Palangka Raya <br/> All Right Reserved</small></p></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="gotoTop" class="icon-angle-up"></div>
+<!--============================= file JS =============================-->
+<?php $this->load->view('/partials_depan/js.php') ?>
+<!--============================= file JS =============================-->
 </body>
 </html>

@@ -6,7 +6,7 @@
 <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<?php echo base_url().''?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini">USP</span>
       <!-- logo for regular state and mobile devices -->
