@@ -42,7 +42,7 @@ Jalan Hendrik Timang
 <div class="col_one_third col_last">
 <div class="widget clearfix" style="margin-bottom: -20px;">
 <div class="row">
-<div class="col-lg-6 clearfix bottommargin-sm">
+<div class="col-lg-6 clearfix">
     <a href="https://www.facebook.com/groups/sakti.upr/" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
         <i class="icon-facebook"></i>
         <i class="icon-facebook"></i>

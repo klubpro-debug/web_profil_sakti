@@ -32,9 +32,9 @@
 
         <div class="container clearfix">
                 <div class="clear"></div>
-                <div class="fancy-title title-border title-center">
+                <div class="fancy-title title-center">
                     <div class="clear"></div>
-                    <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -43,20 +43,15 @@
                             <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="Mac" style="position: absolute; top: 0; left: 0;">
                         </div>
                         </div>
+                        
                     </div>
                     <div class="col-lg-6">
                         <div class="entry-title">
-                        <h4></br>Divisi blabla.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</p>
-                            <ul class="iconlist iconlist-large iconlist-color">
-                                <li><i class="icon-ok-sign"></i> Interactive Live Builder</li>
-                                <li><i class="icon-ok-sign"></i> Valid HTML5 &amp; CSS3 Semantics</li>
-                                <li><i class="icon-ok-sign"></i> 100% Open Source &amp; Customizable</li>
-                                <li><i class="icon-ok-sign"></i> More than 70+ Widgets</li>
-                                <li><i class="icon-ok-sign"></i> Responsive &amp; Retina Devices Support</li>
-                                <li><i class="icon-ok-sign"></i> Easy Embeddable Media &amp; Graphics</li>
-                                <li><i class="icon-ok-sign"></i> Lifetime <strong>FREE</strong> Updates</li>
+                        <h2>Divisi Multimedia.</h1>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</h4>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</h4>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</h4>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, ab incidunt temporibus rerum odio accusantium.</h4>
                             </ul>
                         </div>
                     </div>
@@ -115,7 +110,7 @@
     <!-- menu feature -->
     <!----------------------------- AWAL JUDUL  ----------------------------->
     <div class="clear"></div>
-    <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+    <div class="divider"></div>
     
   
     <div id="gotoTop" class="icon-angle-up"></div>
