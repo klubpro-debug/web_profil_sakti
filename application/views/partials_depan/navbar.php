@@ -12,9 +12,9 @@
 
             <nav id="primary-menu">
                 <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                    <li class="sub-menu"><a href="<?php echo site_url();?>">Beranda</a></li>
-                    <li class="sub-menu"><a href="<?php echo site_url('artikel');?>">Berita </a></li>
-                    <li class="sub-menu"><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
+                    <li class="menu"><a href="<?php echo site_url();?>">Beranda</a></li>
+                    <li class="menu"><a href="<?php echo site_url('artikel');?>">Berita </a></li>
+                    <li class="menu"><a href="<?php echo site_url('galeri');?>">Galeri</a></li>
                     <li class="sub-menu">
                         <a href="javasript:void(0);" class="sf-with-ul">
                             <div>Divisi</div>
@@ -37,7 +37,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sub-menu"><a href="<?php echo site_url('about');?>">About Us</a></li>
+                    <li class="menu"><a href="<?php echo site_url('about');?>">About Us</a></li>
                 </ul>
 
             </nav>
