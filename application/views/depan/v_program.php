@@ -15,11 +15,27 @@
 
 <section id="page-title" class="page-title-parallax page-title-dark page-title-right" style="padding: 250px 0; background-image: url('<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 440px;" data-top-bottom="background-position:0px -500px;">
     <div class="container clearfix">
-        <h1>DIVISI PEMROGRAMAN</h1>
+    <h1>DIVISI PEMROGRAMAN</h1>
         <span>UKM SAKTI - UPR</span>
+      <body>
+    <!--============================= HEADER =============================-->
+    <div class="header-topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 col-md-9">
+                    <div class="header-top_address">
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                   
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
         <!-- sejarah -->
         <!----------------------------- AWAL JUDUL  ----------------------------->
         <div class="clear"></div>
