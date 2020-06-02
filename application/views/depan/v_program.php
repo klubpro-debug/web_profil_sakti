@@ -5,7 +5,7 @@
 <head>
     <?php 
     $this->load->view('/partials_depan/head.php');
-    ?>
+    ?>    
 </head>
 
 <body class="stretched">
@@ -56,6 +56,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
 
     <!-- akhir menu feature -->
