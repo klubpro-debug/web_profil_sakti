@@ -105,14 +105,7 @@
           </ul>
         </li>
 <!-- akhir klub -->
-        <li>
-          <a href="<?php echo base_url().'admin/youtube'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
-            <span class="pull-right-container">
-              <small class="label pull-right"></small>
-            </span>
-          </a>
-        </li>
+
         <!--
         <li class="treeview">
           <a href="#">
@@ -149,7 +142,7 @@
         </li>
 
          <li>
-          <a href="<?php echo base_url().'administrator/logout'?>">
+          <a href="<?php echo base_url().'admin/login/logout'?>">
             <i class="fa fa-sign-out"></i> <span>Sign Out</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
