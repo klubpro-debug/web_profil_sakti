@@ -94,6 +94,7 @@
             </span>
           </a>
         </li>-->
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
@@ -107,7 +108,25 @@
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
-        <li>
+<!-- klub -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Klub</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          <li><a href="<?php echo base_url().'admin/AddKlub'?>"><i class="fa fa-graduation-cap"></i> Add Klub</a></li>
+            <li><a href="<?php echo base_url().'admin/mulmed'?>"><i class="fa fa-graduation-cap"></i> Klub Multimedia</a></li>
+            <li><a href="<?php echo base_url().'admin/robo'?>"><i class="fa fa-graduation-cap"></i> Klub Robotik</a></li>
+            <li><a href="<?php echo base_url().'admin/program'?>"><i class="fa fa-graduation-cap"></i> Klub Programming</a></li>
+          </ul>
+        </li>
+<!-- akhir klub -->
+
+        <!-- <li>
           <a href="<?php echo base_url().'admin/mulmed'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
@@ -130,7 +149,8 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
+
         <li>
           <a href="<?php echo base_url().'admin/youtube'?>">
             <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>

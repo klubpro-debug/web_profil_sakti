@@ -36,8 +36,7 @@
             </span>
           </a>
         </li>
-
-        <li class="treeview active">
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-newspaper-o"></i>
             <span>Berita</span>
@@ -47,11 +46,18 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/tulisan'?>"><i class="fa fa-list"></i> List Berita</a></li>
-            <li class="active"><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
+            <li><a href="<?php echo base_url().'admin/tulisan/add_tulisan'?>"><i class="fa fa-thumb-tack"></i> Post Berita</a></li>
             <li><a href="<?php echo base_url().'admin/kategori'?>"><i class="fa fa-wrench"></i> Kategori</a></li>
           </ul>
         </li>
-        
+        <li>
+          <a href="<?php echo base_url().'admin/pengguna'?>">
+            <i class="fa fa-users"></i> <span>Pengguna</span>
+            <span class="pull-right-container">
+              <small class="label pull-right"></small>
+            </span>
+          </a>
+        </li>
         <!--
         <li>
           <a href="<?php echo base_url().'admin/agenda'?>">
@@ -78,6 +84,7 @@
             </span>
           </a>
         </li>-->
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
@@ -91,8 +98,25 @@
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
+		<!-- klub -->
+    <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Klub</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          <li class="active"><a href="<?php echo base_url().'admin/AddKlub'?>"><i class="fa fa-graduation-cap"></i> Add Klub</a></li>
+            <li><a href="<?php echo base_url().'admin/mulmed'?>"><i class="fa fa-graduation-cap"></i> Klub Multimedia</a></li>
+            <li><a href="<?php echo base_url().'admin/robo'?>"><i class="fa fa-graduation-cap"></i> Klub Robotik</a></li>
+            <li><a href="<?php echo base_url().'admin/program'?>"><i class="fa fa-graduation-cap"></i> Klub Programming</a></li>
+          </ul>
+        </li>
+<!-- akhir klub -->
 
-        <li>
+        <!-- <li>
           <a href="<?php echo base_url().'admin/mulmed'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
@@ -115,7 +139,8 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
+
         <li>
           <a href="<?php echo base_url().'admin/youtube'?>">
             <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
@@ -136,10 +161,9 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
             <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-
           </ul>
         </li>
-  -->
+        -->
         <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
@@ -172,19 +196,20 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+
 <!-- ------------------------------------------------------------------------ -->
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Berita
+        Klub
         <small></small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Berita</a></li>
-        <li class="active">Add Berita</li>
+        <li><a href="#">Klub</a></li>
+        <li class="active">Add Klub</li>
       </ol>
     </section>
 
@@ -194,7 +219,7 @@
       <!-- SELECT2 EXAMPLE -->
       <div class="box box-default">
         <div class="box-header with-border">
-          <h3 class="box-title">Post Berita</h3>
+          <h3 class="box-title">Tambah Klub</h3>
         </div>
 
 		<form action="<?php echo base_url().'admin/tulisan/simpan_tulisan'?>" method="post" enctype="multipart/form-data">
@@ -203,7 +228,7 @@
         <div class="box-body">
           <div class="row">
             <div class="col-md-10">
-              <input type="text" name="xjudul" class="form-control" placeholder="Judul berita atau artikel" required/>
+              <input type="text" name="xjudul" class="form-control" placeholder="Nama Klub" required/>
             </div>
             <!-- /.col -->
             <div class="col-md-2">
@@ -221,25 +246,13 @@
 	  </div>
       <!-- /.box -->
 
-      <div class="row">
-        <div class="col-md-8">
-
-          <div class="box box-danger">
-            <div class="box-header">
-              <h3 class="box-title">Berita</h3>
-            </div>
-            <div class="box-body">
-
-			<textarea id="ckeditor" name="xisi" required></textarea>
-
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-
-        </div>
+     
         <!-- /.col (left) -->
-        <div class="col-md-4">
+        <!-- 
+          yang ditampilkan hanya masukan gambar
+          gambar ditampilkan di jumbotron di BERANDA 
+         -->
+        <div class="col-md-6">
           <div class="box box-primary">
             <div class="box-header">
               <h3 class="box-title">Pengaturan Lainnya</h3>

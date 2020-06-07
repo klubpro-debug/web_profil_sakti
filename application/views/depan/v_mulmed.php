@@ -54,15 +54,15 @@
                     
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-xs-6 col-md-6">
                         <div class="entry-image">
-                        <div style="position: relative;" data-height-xl="500" data-height-lg="200" data-height-md="300" data-height-sm="316" data-height-xs="201">
+                        <div  data-height-xs="500" data-height-lg="200" data-height-md="300" data-height-sm="300" data-height-xs="200">
                             <img src="<?php echo base_url().'assets/images/25a9844d4f0ae1f4db581e609a8f635a.jpg'?>" alt="Mac" style="position: absolute; top: 0; left: 0;">
                         </div>
                         </div>
                         
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-xs-6 col-md-6">
                         <div class="entry-title">
                         <h2>Divisi Multimedia.</h1>
                             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quos, facilis esse rem dicta dignissimos eligendi earum sapiente ipsam iure vel deserunt? Soluta doloremque aspernatur quis asperiores numquam placeat dolore.</h4>

@@ -28,7 +28,7 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">Menu Utama</li>
-        <li>
+        <li class="active">
           <a href="<?php echo base_url().'admin/dashboard'?>">
             <i class="fa fa-home"></i> <span>Dashboard</span>
             <span class="pull-right-container">
@@ -84,6 +84,7 @@
             </span>
           </a>
         </li>-->
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-camera"></i>
@@ -97,8 +98,25 @@
             <li><a href="<?php echo base_url().'admin/galeri'?>"><i class="fa fa-picture-o"></i> Photos</a></li>
           </ul>
         </li>
+<!-- klub -->
+<li class="treeview active">
+          <a href="#">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Klub</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          <li><a href="<?php echo base_url().'admin/AddDeskripsiKlub'?>"><i class="fa fa-graduation-cap"></i> Add Klub</a></li>
+            <li class="active"><a href="<?php echo base_url().'admin/mulmed'?>"><i class="fa fa-graduation-cap"></i> Klub Multimedia</a></li>
+            <li><a href="<?php echo base_url().'admin/robo'?>"><i class="fa fa-graduation-cap"></i> Klub Robotik</a></li>
+            <li><a href="<?php echo base_url().'admin/program'?>"><i class="fa fa-graduation-cap"></i> Klub Programming</a></li>
+          </ul>
+        </li>
+<!-- akhir klub -->
 
-        <li>
+        <!-- <li>
           <a href="<?php echo base_url().'admin/mulmed'?>">
             <i class="fa fa-graduation-cap"></i> <span>Klub Multimedia</span>
             <span class="pull-right-container">
@@ -121,7 +139,8 @@
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
+
         <li>
           <a href="<?php echo base_url().'admin/youtube'?>">
             <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
@@ -142,11 +161,9 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url().'admin/siswa'?>"><i class="fa fa-users"></i> Data Siswa</a></li>
             <li><a href="#"><i class="fa fa-star-o"></i> Prestasi Siswa</a></li>
-
           </ul>
         </li>
-  -->
-
+        -->
         <li>
           <a href="<?php echo base_url().'admin/inbox'?>">
             <i class="fa fa-envelope"></i> <span>Inbox</span>
@@ -202,7 +219,7 @@
 
           <div class="box">
             <div class="box-header">
-              <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus"></span> Add Klub Multimedia</a>
+              <a href="<?php echo base_url().'admin/AddDeskripsiKlub'?>" class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span class="fa fa-plus" ></span> Add Klub Multimedia</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
