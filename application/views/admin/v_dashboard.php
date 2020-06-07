@@ -77,14 +77,14 @@
             </span>
           </a>
         </li>-->
-        <li>
+        <!-- <li>
           <a href="<?php echo base_url().'admin/pengumuman'?>">
             <i class="fa fa-volume-up"></i> <span>Visimisi</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
         <!--
         <li>
           <a href="<?php echo base_url().'admin/files'?>">
@@ -151,14 +151,14 @@
           </a>
         </li> -->
 
-        <li>
+        <!-- <li>
           <a href="<?php echo base_url().'admin/youtube'?>">
             <i class="fa fa-graduation-cap"></i> <span>Link Youtube</span>
             <span class="pull-right-container">
               <small class="label pull-right"></small>
             </span>
           </a>
-        </li>
+        </li> -->
         <!--
         <li class="treeview">
           <a href="#">
