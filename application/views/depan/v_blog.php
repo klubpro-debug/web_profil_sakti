@@ -73,7 +73,7 @@ $this->load->view('/partials_depan/navbar.php');
         </div>
         </div>
 
-
+<!--  -->
         <div class="sidebar nobottommargin col_last clearfix">
             <div class="sidebar-widgets-wrap">
                 <div class="widget clearfix">
